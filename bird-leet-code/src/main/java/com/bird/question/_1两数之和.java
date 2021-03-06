@@ -1,5 +1,9 @@
 package com.bird.question;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @Author lipu
  * @Date 2021/3/6 18:40
@@ -40,11 +44,25 @@ public class _1两数之和 {
      * @Description 解决方案
      */
     public int[] twoSum(int[] nums, int target){
+        //初始化数组将元素放入到哈希表中提高查询效率
+        Map<Integer,Integer> map=new HashMap<>();
+        //循环遍历数组中的元素,寻找与之匹配的另外一个元素 目标元素=target-当前遍历的元素
+        for (int i = 0; i <nums.length ; i++) {
+            int other=target-nums[i];
+            if (map.containsKey(other)){
+                return new int[]{i,map.get(other)};
+            }else {
+                map.put(nums[i],i);
+            }
+        }
         return null;
     }
 
     public static void main(String[] args) {
         _1两数之和 client=new _1两数之和();
-
+        int[] nums=new int[]{3,3};
+        int target=6;
+        int[] twoSum = client.twoSum(nums, target);
+        System.out.println(Arrays.toString(twoSum));
     }
 }
