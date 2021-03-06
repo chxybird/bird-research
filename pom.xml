@@ -5,6 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>bird-jdk</module>
+        <module>bird-mongodb</module>
+        <module>bird-leet-code</module>
     </modules>
 
     <parent>
