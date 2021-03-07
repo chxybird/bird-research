@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/question/_26数组去重.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/question/_27移除元素.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/sort/BirdSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/question/_1两数之和.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/question/_1两数之和.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,39 +72,13 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._1两数之和">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.optional.Client" />
-      <module name="bird-jdk" />
+  <component name="RunManager" selected="Application.BirdSort">
+    <configuration name="BirdSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.sort.BirdSort" />
+      <module name="bird-leet-code" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bird.optional.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.date.Client" />
-      <module name="bird-jdk" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.date.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.stream.Client" />
-      <module name="bird-jdk" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.stream.*" />
+          <option name="PATTERN" value="com.bird.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,13 +112,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_26数组去重" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.question._26数组去重" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_27移除元素" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.question._27移除元素" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.question.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BirdSort" />
+        <item itemvalue="Application._27移除元素" />
+        <item itemvalue="Application._26数组去重" />
         <item itemvalue="Application._1两数之和" />
         <item itemvalue="Application._20括号的匹配" />
-        <item itemvalue="Application.Client (2)" />
-        <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +168,10 @@
       <workItem from="1615001637309" duration="1593000" />
       <workItem from="1615021384164" duration="7331000" />
       <workItem from="1615034893692" duration="3820000" />
-      <workItem from="1615039154430" duration="1868000" />
+      <workItem from="1615039154430" duration="4164000" />
+      <workItem from="1615091200823" duration="10966000" />
+      <workItem from="1615110975496" duration="8657000" />
+      <workItem from="1615130259395" duration="2309000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -195,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615028600062</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="调研提交">
+      <created>1615044529288</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615044529288</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,38 +240,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611320581670" />
-    <state width="1492" height="373" key="GridCell.Tab.0.bottom" timestamp="1615044411592">
+    <state width="1492" height="205" key="GridCell.Tab.0.bottom" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="373" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615044411592" />
-    <state width="1492" height="373" key="GridCell.Tab.0.center" timestamp="1615044411592">
+    <state width="1492" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
+    <state width="1492" height="205" key="GridCell.Tab.0.center" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="373" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615044411592" />
-    <state width="1492" height="373" key="GridCell.Tab.0.left" timestamp="1615044411592">
+    <state width="1492" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
+    <state width="1492" height="205" key="GridCell.Tab.0.left" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="373" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615044411592" />
-    <state width="1492" height="373" key="GridCell.Tab.0.right" timestamp="1615044411592">
+    <state width="1492" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
+    <state width="1492" height="205" key="GridCell.Tab.0.right" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="373" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615044411592" />
-    <state width="1492" height="279" key="GridCell.Tab.1.bottom" timestamp="1615038726445">
+    <state width="1492" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
+    <state width="1492" height="205" key="GridCell.Tab.1.bottom" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="279" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615038726445" />
-    <state width="1492" height="279" key="GridCell.Tab.1.center" timestamp="1615038726445">
+    <state width="1492" height="205" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
+    <state width="1492" height="205" key="GridCell.Tab.1.center" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="279" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1615038726445" />
-    <state width="1492" height="279" key="GridCell.Tab.1.left" timestamp="1615038726444">
+    <state width="1492" height="205" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
+    <state width="1492" height="205" key="GridCell.Tab.1.left" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="279" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1615038726444" />
-    <state width="1492" height="279" key="GridCell.Tab.1.right" timestamp="1615038726445">
+    <state width="1492" height="205" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
+    <state width="1492" height="205" key="GridCell.Tab.1.right" timestamp="1615120605390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="279" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1615038726445" />
+    <state width="1492" height="205" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1615120605390" />
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor" timestamp="1615026604677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -271,9 +284,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="221" y="80" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1615022625831" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1615036151544">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1615093719846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615036151544" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1615093719846" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1615112457380">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615112457380" />
   </component>
 </project>
