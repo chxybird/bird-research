@@ -9,12 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bird-leet-code" />
         <module name="bird-mongodb" />
+        <module name="bird-layui" />
         <module name="bird-jdk" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bird-jdk" target="11" />
-      <module name="bird-leet-code" target="1.8" />
+      <module name="bird-layui" target="11" />
+      <module name="bird-leet-code" target="11" />
       <module name="bird-mongodb" target="11" />
       <module name="bird-research" target="11" />
     </bytecodeTargetLevel>
@@ -22,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bird-jdk" options="-parameters" />
+      <module name="bird-layui" options="-parameters" />
       <module name="bird-leet-code" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />
     </option>

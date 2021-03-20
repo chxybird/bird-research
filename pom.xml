@@ -7,6 +7,7 @@
         <module>bird-jdk</module>
         <module>bird-mongodb</module>
         <module>bird-leet-code</module>
+        <module>bird-layui</module>
     </modules>
 
     <parent>
