@@ -1,9 +1,11 @@
 package com.bird.service.impl;
 
+import com.bird.dao.StudentMapper;
 import com.bird.entity.Student;
 import com.bird.service.StudentService;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -14,6 +16,9 @@ import java.util.List;
 @Service
 public class StudentImpl implements StudentService {
 
+    @Resource
+    private StudentMapper studentMapper;
+
     /**
      * @Author lipu
      * @Date 2021/3/26 11:56
@@ -21,6 +26,6 @@ public class StudentImpl implements StudentService {
      */
     @Override
     public List<Student> findAll() {
-        return null;
+        return studentMapper.selectList(null);
     }
 }
