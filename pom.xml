@@ -8,6 +8,7 @@
         <module>bird-mongodb</module>
         <module>bird-leet-code</module>
         <module>bird-layui</module>
+        <module>bird-excel</module>
     </modules>
 
     <parent>

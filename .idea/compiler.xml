@@ -10,10 +10,12 @@
         <module name="bird-leet-code" />
         <module name="bird-mongodb" />
         <module name="bird-layui" />
+        <module name="bird-excel" />
         <module name="bird-jdk" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bird-excel" target="11" />
       <module name="bird-jdk" target="11" />
       <module name="bird-layui" target="11" />
       <module name="bird-leet-code" target="11" />
@@ -23,6 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bird-excel" options="-parameters" />
       <module name="bird-jdk" options="-parameters" />
       <module name="bird-layui" options="-parameters" />
       <module name="bird-leet-code" options="-parameters" />
