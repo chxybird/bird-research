@@ -5,21 +5,21 @@ import java.util.LinkedList;
 /**
  * @Author lipu
  * @Date 2021/3/21 10:49
- * @Description 顺序表 链表 带头结点
+ * @Description 顺序表 链表 带头结点 双向链表
  */
 public class BirdLinkedList {
 
     //头结点
-    private final Node head;
+    private final Node NODE_HEAD = new Node();
     //链表长度
-    int length;
+    int length = 0;
 
     /**
      * 元素节点 内部类
      */
-    class Node{
+    class Node {
         //元数据
-        Object element;
+        Object data;
         //下一个元素节点指针
         Node next;
         //上一个元素节点指针
@@ -28,13 +28,94 @@ public class BirdLinkedList {
 
     //构造器 初始化
     public BirdLinkedList() {
-        head=new Node();
-        length=0;
+
     }
 
     /**
      * @Author lipu
      * @Date 2021/3/26 13:22
-     * @Description 添加操作
+     * @Description 添加操作 尾插法
      */
+    public void addLast() {
+        //当前指针位置
+        Node p = NODE_HEAD;
+        //创建节点
+        Node node = new Node();
+        //当插入的是第一个节点时
+        if (this.length == 0) {
+            NODE_HEAD.next = node;
+            node.pre = NODE_HEAD;
+            this.length++;
+        } else {
+            //当插入的节点不为第一个节点
+            while (p.next != null) {
+                p = p.next;
+            }
+            p.next = node;
+            node.pre = p;
+            this.length++;
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/3/28 18:46
+     * @Description 添加操作 头插法
+     */
+    public void addFirst() {
+        //创建节点
+        Node node = new Node();
+        //当有节点的时候
+        if (this.length > 0) {
+            node.next = NODE_HEAD.next;
+            NODE_HEAD.next.pre = node;
+            NODE_HEAD.next = node;
+            node.pre = NODE_HEAD;
+            this.length++;
+        } else {
+            //当没有节点的时候 直接插入到头结点之后
+            NODE_HEAD.next = node;
+            node.pre = NODE_HEAD;
+            this.length++;
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/3/28 19:16
+     * @Description 按索引查找 1为开始
+     */
+    public Object findByIndex(int index) throws Exception {
+        //定义指针
+        Node pointer = NODE_HEAD;
+        //越界判断
+        if (this.length < index) {
+            throw new Exception("索引越界");
+        }
+        //移动指针返回值
+        for (int i = 0; i < index; i++) {
+            pointer=pointer.next;
+        }
+        return pointer.data;
+    }
+
+
+    /**
+     * @Author lipu
+     * @Date 2021/3/28 19:16
+     * @Description 按值查找 返回逻辑值
+     */
+    public boolean findByValue(Object value) {
+        //定义指针
+        Node pointer = NODE_HEAD;
+        while (pointer.next != null) {
+            //值匹配
+            if (value.equals(pointer.data)) {
+                return true;
+            }
+            //移动指针
+            pointer = pointer.next;
+        }
+        return false;
+    }
 }

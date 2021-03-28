@@ -2,7 +2,6 @@ package com.bird.controller;
 
 import com.bird.entity.Student;
 import com.bird.service.StudentService;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
