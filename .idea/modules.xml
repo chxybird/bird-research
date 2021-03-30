@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bird-excel/bird-excel.iml" filepath="$PROJECT_DIR$/bird-excel/bird-excel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" filepath="$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-jdk/bird-jdk.iml" filepath="$PROJECT_DIR$/bird-jdk/bird-jdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-layui/bird-layui.iml" filepath="$PROJECT_DIR$/bird-layui/bird-layui.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" filepath="$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" />

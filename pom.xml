@@ -9,6 +9,7 @@
         <module>bird-leet-code</module>
         <module>bird-layui</module>
         <module>bird-excel</module>
+        <module>bird-freemarker</module>
     </modules>
 
     <parent>
