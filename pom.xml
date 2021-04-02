@@ -10,6 +10,7 @@
         <module>bird-layui</module>
         <module>bird-excel</module>
         <module>bird-freemarker</module>
+        <module>bird-task</module>
     </modules>
 
     <parent>

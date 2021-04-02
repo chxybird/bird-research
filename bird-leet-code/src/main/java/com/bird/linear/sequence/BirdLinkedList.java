@@ -17,7 +17,7 @@ public class BirdLinkedList {
     /**
      * 元素节点 内部类
      */
-    class Node {
+    static class Node {
         //元数据
         Object data;
         //下一个元素节点指针
@@ -94,7 +94,7 @@ public class BirdLinkedList {
         }
         //移动指针返回值
         for (int i = 0; i < index; i++) {
-            pointer=pointer.next;
+            pointer = pointer.next;
         }
         return pointer.data;
     }
@@ -117,5 +117,42 @@ public class BirdLinkedList {
             pointer = pointer.next;
         }
         return false;
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/2 9:57
+     * @Description 删除节点(根据索引)
+     */
+    public boolean removeByIndex(int index) throws Exception {
+        //索引越界判断
+        if (index <= 0 || index > this.length) {
+            throw new Exception("索引越界");
+        }
+        //定义头指针
+        Node pointer = NODE_HEAD;
+        //寻找索引节点的前驱结点
+        for (int i = 0; i < index-1; i++) {
+            pointer=pointer.next;
+        }
+        //断链操作
+        pointer.next.pre=null;
+        pointer.next=pointer.next.next;
+        //防止被删除的节点为最后一个节点
+        if (pointer.next!=null){
+            pointer.next.pre.next=null;
+            pointer.next.pre=null;
+        }
+        this.length--;
+        return true;
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/2 10:28
+     * @Description 获取链表长度
+     */
+    public int getLength(){
+        return this.length;
     }
 }

@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" filepath="$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" filepath="$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bird-research.iml" filepath="$PROJECT_DIR$/.idea/bird-research.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-task/bird-task.iml" filepath="$PROJECT_DIR$/bird-task/bird-task.iml" />
     </modules>
   </component>
 </project>

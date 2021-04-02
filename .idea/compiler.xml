@@ -10,6 +10,7 @@
         <module name="bird-freemarker" />
         <module name="bird-leet-code" />
         <module name="bird-excel" />
+        <module name="bird-task" />
         <module name="bird-jdk" />
         <module name="bird-mongodb" />
         <module name="bird-layui" />
@@ -23,6 +24,7 @@
       <module name="bird-leet-code" target="11" />
       <module name="bird-mongodb" target="11" />
       <module name="bird-research" target="11" />
+      <module name="bird-task" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -33,6 +35,7 @@
       <module name="bird-layui" options="-parameters" />
       <module name="bird-leet-code" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />
+      <module name="bird-task" options="-parameters" />
     </option>
   </component>
 </project>
