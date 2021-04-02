@@ -1,7 +1,5 @@
 package com.bird.linear.sequence;
 
-import java.util.LinkedList;
-
 /**
  * @Author lipu
  * @Date 2021/3/21 10:49
@@ -36,11 +34,12 @@ public class BirdLinkedList {
      * @Date 2021/3/26 13:22
      * @Description 添加操作 尾插法
      */
-    public void addLast() {
+    public void addLast(Object data) {
         //当前指针位置
         Node p = NODE_HEAD;
         //创建节点
         Node node = new Node();
+        node.data=data;
         //当插入的是第一个节点时
         if (this.length == 0) {
             NODE_HEAD.next = node;
@@ -62,9 +61,10 @@ public class BirdLinkedList {
      * @Date 2021/3/28 18:46
      * @Description 添加操作 头插法
      */
-    public void addFirst() {
+    public void addFirst(Object data) {
         //创建节点
         Node node = new Node();
+        node.data=data;
         //当有节点的时候
         if (this.length > 0) {
             node.next = NODE_HEAD.next;
@@ -110,7 +110,7 @@ public class BirdLinkedList {
         Node pointer = NODE_HEAD;
         while (pointer.next != null) {
             //值匹配
-            if (value.equals(pointer.data)) {
+            if (value.equals(pointer.next.data)) {
                 return true;
             }
             //移动指针
@@ -124,7 +124,7 @@ public class BirdLinkedList {
      * @Date 2021/4/2 9:57
      * @Description 删除节点(根据索引)
      */
-    public boolean removeByIndex(int index) throws Exception {
+    public void removeByIndex(int index) throws Exception {
         //索引越界判断
         if (index <= 0 || index > this.length) {
             throw new Exception("索引越界");
@@ -132,19 +132,18 @@ public class BirdLinkedList {
         //定义头指针
         Node pointer = NODE_HEAD;
         //寻找索引节点的前驱结点
-        for (int i = 0; i < index-1; i++) {
-            pointer=pointer.next;
+        for (int i = 0; i < index - 1; i++) {
+            pointer = pointer.next;
         }
         //断链操作
-        pointer.next.pre=null;
-        pointer.next=pointer.next.next;
+        pointer.next.pre = null;
+        pointer.next = pointer.next.next;
         //防止被删除的节点为最后一个节点
-        if (pointer.next!=null){
-            pointer.next.pre.next=null;
-            pointer.next.pre=null;
+        if (pointer.next != null) {
+            pointer.next.pre.next = null;
+            pointer.next.pre = null;
         }
         this.length--;
-        return true;
     }
 
     /**
@@ -152,7 +151,44 @@ public class BirdLinkedList {
      * @Date 2021/4/2 10:28
      * @Description 获取链表长度
      */
-    public int getLength(){
+    public int getLength() {
         return this.length;
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/2 11:55
+     * @Description 打印数组元素
+     */
+    public void printList() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("[");
+        //定义头指针
+        Node pointer = NODE_HEAD;
+        for (int i = 0; i < this.length; i++) {
+            String element = pointer.next.data.toString();
+            stringBuilder.append(element).append(",");
+            pointer = pointer.next;
+        }
+        stringBuilder.append("]");
+        //去除最后一个逗号
+        stringBuilder.deleteCharAt(stringBuilder.length() - 2);
+        System.out.println(stringBuilder.toString());
+    }
+
+    public static void main(String[] args) throws Exception {
+        BirdLinkedList list=new BirdLinkedList();
+        list.addLast("张三");
+        list.addLast("李四");
+        list.addLast("王五");
+        list.addLast("赵六");
+        list.addFirst("老大");
+        list.printList();
+        Object value = list.findByIndex(3);
+        System.out.println(value);
+        System.out.println(list.findByValue("赵六"));
+        System.out.println(list.getLength());
+        list.removeByIndex(5);
+        list.printList();
     }
 }
