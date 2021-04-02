@@ -20,8 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/stack/BirdArrayStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/stack/BirdLinkedStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-task/bird-task.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/sequence/BirdLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/sequence/BirdLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/sequence/BirdArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/sequence/BirdArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +85,20 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BirdLinkedList">
+  <component name="RunManager" selected="Application.BirdArrayStack">
+    <configuration name="BirdArrayStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.linear.stack.BirdArrayStack" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.linear.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BirdLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bird.linear.sequence.BirdLinkedList" />
       <module name="bird-leet-code" />
@@ -91,16 +108,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExcelTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bird-excel" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ExcelTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BirdArrayStack" />
         <item itemvalue="Application.BirdLinkedList" />
         <item itemvalue="Spring Boot.TaskApp" />
         <item itemvalue="Spring Boot.ExcelApp" />
         <item itemvalue="JavaScript Debug.StudentList.html" />
-        <item itemvalue="JUnit.ExcelTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +192,7 @@
       <workItem from="1617103129923" duration="4542000" />
       <workItem from="1617144913152" duration="238000" />
       <workItem from="1617325953026" duration="4809000" />
-      <workItem from="1617332709153" duration="9152000" />
+      <workItem from="1617332709153" duration="13690000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -271,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617333837131</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="调研提交">
+      <created>1617350186972</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617350186972</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,30 +313,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1615028748464" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1616730960300">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1617350948220">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1616730960300" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617350948220" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1616763759694">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1616763759694" />
-    <state width="1492" height="200" key="GridCell.Tab.0.bottom" timestamp="1617346460567">
+    <state width="1492" height="200" key="GridCell.Tab.0.bottom" timestamp="1617354308330">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617346460567" />
-    <state width="1492" height="200" key="GridCell.Tab.0.center" timestamp="1617346460567">
+    <state width="1492" height="200" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617354308330" />
+    <state width="1492" height="200" key="GridCell.Tab.0.center" timestamp="1617354308328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="200" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617346460567" />
-    <state width="1492" height="200" key="GridCell.Tab.0.left" timestamp="1617346460567">
+    <state width="1492" height="200" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617354308328" />
+    <state width="1492" height="200" key="GridCell.Tab.0.left" timestamp="1617354308328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="200" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617346460567" />
-    <state width="1492" height="200" key="GridCell.Tab.0.right" timestamp="1617346460567">
+    <state width="1492" height="200" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617354308328" />
+    <state width="1492" height="200" key="GridCell.Tab.0.right" timestamp="1617354308328">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="200" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617346460567" />
+    <state width="1492" height="200" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617354308328" />
     <state width="1492" height="269" key="GridCell.Tab.1.bottom" timestamp="1617343604747">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -343,10 +357,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617330627377" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617333844892">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617350194210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617333844892" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617350194210" />
     <state x="221" y="80" key="new project wizard" timestamp="1617332393188">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

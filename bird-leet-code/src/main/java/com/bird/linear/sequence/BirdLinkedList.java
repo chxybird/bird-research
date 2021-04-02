@@ -171,8 +171,10 @@ public class BirdLinkedList {
             pointer = pointer.next;
         }
         stringBuilder.append("]");
-        //去除最后一个逗号
-        stringBuilder.deleteCharAt(stringBuilder.length() - 2);
+        if (stringBuilder.toString().contains(",")) {
+            //去除最后一个逗号
+            stringBuilder.deleteCharAt(stringBuilder.length() - 2);
+        }
         System.out.println(stringBuilder.toString());
     }
 

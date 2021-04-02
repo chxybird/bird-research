@@ -105,7 +105,7 @@ public class BirdArray {
             throw new Exception("索引越界");
         }
         //扩容判断
-        if (IsExpend()) {
+        if (isExpend()) {
             expend();
         }
         //插入元素 元素后移
@@ -127,7 +127,7 @@ public class BirdArray {
      */
     public void add(Object value) {
         //扩容判断
-        if (IsExpend()) {
+        if (isExpend()) {
             expend();
         }
         //尾插法 插入元素
@@ -147,8 +147,10 @@ public class BirdArray {
             stringBuilder.append(this.element[i]).append(",");
         }
         stringBuilder.append("]");
-        //去除最后一个逗号
-        stringBuilder.deleteCharAt(stringBuilder.length()-2);
+        if (stringBuilder.toString().contains(",")) {
+            //去除最后一个逗号
+            stringBuilder.deleteCharAt(stringBuilder.length() - 2);
+        }
         System.out.println(stringBuilder.toString());
     }
     
@@ -173,7 +175,7 @@ public class BirdArray {
      * @Date 2021/3/20 19:48
      * @Description 判断是否扩容
      */
-    public boolean IsExpend() {
+    public boolean isExpend() {
         return this.length + 1 > this.size;
     }
 
