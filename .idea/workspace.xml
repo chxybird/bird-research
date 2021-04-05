@@ -16,25 +16,20 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
-      <change afterPath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bird-research.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bird-research.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-excel/bird-excel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/bird-excel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-freemarker/src/main/resources/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/main/resources/template/index.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/src/main/resources/template/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/main/resources/template/index.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bird-freemarker/src/test/java/com/bird/FreeMarkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/test/java/com/bird/FreeMarkerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-jdk/bird-jdk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-jdk/bird-jdk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-layui/bird-layui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-layui/bird-layui.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-task/bird-task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-task/bird-task.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,7 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Marry">
+  <component name="RunManager" selected="JUnit.FreeMarkerTest.test1">
     <configuration name="BirdArrayStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bird.linear.stack.BirdArrayStack" />
       <module name="bird-leet-code" />
@@ -175,9 +170,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Marry" />
-        <item itemvalue="JUnit.FreeMarkerTest.test2" />
         <item itemvalue="JUnit.FreeMarkerTest.test1" />
+        <item itemvalue="JUnit.FreeMarkerTest.test2" />
+        <item itemvalue="Application.Marry" />
         <item itemvalue="Application.BirdArrayStack" />
         <item itemvalue="Application.BirdLinkedList" />
       </list>
@@ -227,7 +222,8 @@
       <workItem from="1617332709153" duration="15349000" />
       <workItem from="1617378033959" duration="210000" />
       <workItem from="1617402727405" duration="73000" />
-      <workItem from="1617521491113" duration="55000" />
+      <workItem from="1617521491113" duration="724000" />
+      <workItem from="1617623815928" duration="428000" />
       <workItem from="1617526152086" duration="2604000" />
       <workItem from="1617589736395" duration="602000" />
     </task>
@@ -329,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617354730123</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="调研提交">
+      <created>1617521599659</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1617521599659</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,46 +380,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617521536544" />
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1617538341967">
+    <state width="1492" height="533" key="GridCell.Tab.0.bottom" timestamp="1617631891859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617538341967" />
-    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1617538341966">
+    <state width="1492" height="533" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617631891859" />
+    <state width="1492" height="533" key="GridCell.Tab.0.center" timestamp="1617631891859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617538341966" />
-    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1617538341966">
+    <state width="1492" height="533" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617631891859" />
+    <state width="1492" height="533" key="GridCell.Tab.0.left" timestamp="1617631891859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617538341966" />
-    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1617538341966">
+    <state width="1492" height="533" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617631891859" />
+    <state width="1492" height="533" key="GridCell.Tab.0.right" timestamp="1617631891859">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617538341966" />
-    <state width="1492" height="269" key="GridCell.Tab.1.bottom" timestamp="1617366740589">
+    <state width="1492" height="533" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617631891859" />
+    <state width="1492" height="355" key="GridCell.Tab.1.bottom" timestamp="1617630986077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="269" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617366740589" />
-    <state width="1492" height="269" key="GridCell.Tab.1.center" timestamp="1617366740589">
+    <state width="1492" height="355" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617630986077" />
+    <state width="1492" height="355" key="GridCell.Tab.1.center" timestamp="1617630986077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="269" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617366740589" />
-    <state width="1492" height="269" key="GridCell.Tab.1.left" timestamp="1617366740589">
+    <state width="1492" height="355" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617630986077" />
+    <state width="1492" height="355" key="GridCell.Tab.1.left" timestamp="1617630986077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="269" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617366740589" />
-    <state width="1492" height="269" key="GridCell.Tab.1.right" timestamp="1617366740589">
+    <state width="1492" height="355" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617630986077" />
+    <state width="1492" height="355" key="GridCell.Tab.1.right" timestamp="1617630986077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="269" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617366740589" />
+    <state width="1492" height="355" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617630986077" />
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor" timestamp="1617525964376">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617525964376" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617354737995">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617521609600">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617354737995" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617521609600" />
     <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617521689639">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
