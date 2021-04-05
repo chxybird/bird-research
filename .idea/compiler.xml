@@ -17,14 +17,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="bird-excel" target="11" />
-      <module name="bird-freemarker" target="11" />
-      <module name="bird-jdk" target="11" />
-      <module name="bird-layui" target="11" />
-      <module name="bird-leet-code" target="11" />
-      <module name="bird-mongodb" target="11" />
-      <module name="bird-research" target="11" />
-      <module name="bird-task" target="11" />
+      <module name="bird-excel" target="1.8" />
+      <module name="bird-freemarker" target="1.8" />
+      <module name="bird-jdk" target="1.8" />
+      <module name="bird-layui" target="1.8" />
+      <module name="bird-leet-code" target="1.8" />
+      <module name="bird-mongodb" target="1.8" />
+      <module name="bird-research" target="1.8" />
+      <module name="bird-task" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
