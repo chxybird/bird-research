@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bird-freemarker" />
         <module name="bird-leet-code" />
+        <module name="bird-mybatis-plus" />
         <module name="bird-excel" />
         <module name="bird-task" />
         <module name="bird-jdk" />
@@ -23,6 +24,7 @@
       <module name="bird-layui" target="1.8" />
       <module name="bird-leet-code" target="1.8" />
       <module name="bird-mongodb" target="1.8" />
+      <module name="bird-mybatis-plus" target="1.8" />
       <module name="bird-research" target="1.8" />
       <module name="bird-task" target="1.8" />
     </bytecodeTargetLevel>
@@ -35,6 +37,7 @@
       <module name="bird-layui" options="-parameters" />
       <module name="bird-leet-code" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />
+      <module name="bird-mybatis-plus" options="-parameters" />
       <module name="bird-task" options="-parameters" />
     </option>
   </component>

@@ -11,6 +11,7 @@
         <module>bird-excel</module>
         <module>bird-freemarker</module>
         <module>bird-task</module>
+        <module>bird-mybatis-plus</module>
     </modules>
 
     <parent>
