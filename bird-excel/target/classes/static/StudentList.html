@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生列表</title>
+</head>
+<style>
+
+    .header {
+        margin: 0 auto;
+        width: 100%;
+        background-color: pink;
+    }
+
+    .header > ul {
+        list-style: none;
+    }
+
+    .header > ul > li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        line-height: 35px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .header ul li:hover {
+        background-color: orange;
+    }
+
+
+</style>
+<body>
+<div id="app">
+    <div class="header">
+        <ul>
+            <li>首页</li>
+            <li><a  @click = "aclick">学生列表</a></li>
+            <li>XXX</li>
+            <li>XXX</li>
+            <li>XXX</li>
+        </ul>
+    </div>
+    <div>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" width="1200px">
+            <tr>
+                <td>序号</td>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>性别</td>
+                <td>数学成绩</td>
+                <td>英语成绩</td>
+                <td>语文成绩</td>
+            </tr>
+            <tr v-for="item of studentList">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.age}}</td>
+                <td>{{item.sex}}</td>
+                <td>{{item.mathGrade}}</td>
+                <td>{{item.englishGrade}}</td>
+                <td>{{item.chineseGrade}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data:{
+            studentList:[]
+        },
+        methods: {
+            aclick() {
+                console.log("aaa")
+                axios({
+                    method: 'GET',
+                    url: 'http://127.0.0.1:8080/student/findAll',
+                }).then(res => {
+                    this.studentList = res.data;
+                })
+            }
+        }
+    })
+</script>
