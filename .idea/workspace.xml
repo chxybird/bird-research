@@ -26,16 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
-      <change afterPath="$PROJECT_DIR$/bird-mybatis-plus/src/main/java/com/bird/MybatisPlusApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-mybatis-plus/src/test/java/MybatisLambdaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-mybatis-plus/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-mybatis-plus/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -232,7 +223,7 @@
       <workItem from="1617526152086" duration="2604000" />
       <workItem from="1617589736395" duration="602000" />
       <workItem from="1617689469485" duration="667000" />
-      <workItem from="1617691800399" duration="388000" />
+      <workItem from="1617691800399" duration="972000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -353,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617689870795</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="调研提交">
+      <created>1617692231660</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1617692231660</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
