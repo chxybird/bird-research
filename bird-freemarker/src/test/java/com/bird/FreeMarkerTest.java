@@ -14,7 +14,9 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -44,9 +46,20 @@ public class FreeMarkerTest {
         //获取文件模板
         Template template = configuration.getTemplate("index.ftl");
         //构造数据模型
-        Student student = new Student(16036024L, "小鸟程序员", 24);
+        Map<String,Object> model=new HashMap<>(16);
+        Student student1 = new Student(16036024L, "张三", 24);
+        Student student2 = new Student(16036025L, "李四", 25);
+        Student student3 = new Student(16036026L, "王五", 26);
+        Student student4 = new Student(16036027L, "赵六", 27);
+        List<Student> studentList=new ArrayList<>();
+        studentList.add(student1);
+        studentList.add(student2);
+        studentList.add(student3);
+        studentList.add(student4);
+        model.put("studentList",studentList);
+        model.put("flag",2);
         //生成模板
-        template.process(student, new PrintWriter(System.out));
+        template.process(model, new PrintWriter(System.out));
     }
 
     /**
@@ -70,4 +83,5 @@ public class FreeMarkerTest {
         //生成模板
         template.process(model,new PrintWriter(System.out));
     }
+
 }
