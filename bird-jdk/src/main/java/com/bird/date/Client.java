@@ -60,7 +60,6 @@ public class Client {
         DateTimeFormatter fmt=DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH小时mm分ss秒");
         String customerDate = fmt.format(dateTime);
         System.out.println(customerDate);
-
         //字符串解析为日期
         LocalDateTime time = LocalDateTime.parse("2021年01月23日 18小时45分05秒",fmt);
         System.out.println(time);

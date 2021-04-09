@@ -3,10 +3,13 @@ package com.bird.controller;
 import com.bird.entity.Student;
 import com.bird.service.StudentService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -31,5 +34,15 @@ public class StudentController {
     @GetMapping("/findAll")
     public List<Student> findAll(){
         return studentService.findAll();
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/9 9:02
+     * @Description 导出excel报表
+     */
+    @PostMapping("/download")
+    public void download(HttpServletResponse response) throws IOException {
+        studentService.download(response);
     }
 }

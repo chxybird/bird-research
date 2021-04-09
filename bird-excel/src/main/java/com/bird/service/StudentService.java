@@ -1,7 +1,10 @@
 package com.bird.service;
 
 import com.bird.entity.Student;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -12,4 +15,8 @@ import java.util.List;
 public interface StudentService {
 
     List<Student> findAll();
+
+    void download(HttpServletResponse response) throws IOException;
+
+    void upload(MultipartFile file);
 }
