@@ -1,6 +1,6 @@
 package com.bird;
 
-import com.entity.Student;
+import com.bird.entity.Student;
 import freemarker.cache.FileTemplateLoader;
 import freemarker.cache.StringTemplateLoader;
 import freemarker.cache.TemplateLoader;

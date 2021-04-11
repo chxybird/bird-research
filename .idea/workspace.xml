@@ -27,15 +27,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
+      <change afterPath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/controller/FreemarkerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-freemarker/src/main/resources/template/data-type.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/ExcelApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/ExcelApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/config/CorsConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/dao/StudentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/dao/StudentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/entity/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/listener/StudentListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/listener/StudentListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-excel/src/main/resources/static/StudentList.html" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/src/main/resources/static/StudentList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/controller/StudentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/service/StudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/service/StudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-excel/target/test-classes/ExcelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/test-classes/ExcelTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/queue/BirdArrayDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/linear/queue/BirdArrayDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/service/impl/StudentImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-excel/target/classes/com/bird/service/impl/StudentImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/src/test/java/com/bird/FreeMarkerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/test/java/com/bird/FreeMarkerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/target/classes/com/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/target/test-classes/com/bird/FreeMarkerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/target/test-classes/com/bird/FreeMarkerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/sequence/BirdArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/sequence/BirdArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/sequence/BirdLinkedList$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/sequence/BirdLinkedList$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/sequence/BirdLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/sequence/BirdLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/stack/BirdArrayStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/stack/BirdArrayStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/stack/BirdLinkedStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/linear/stack/BirdLinkedStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_1两数之和.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_1两数之和.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_20括号的匹配.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_20括号的匹配.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_26数组去重.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_26数组去重.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_27移除元素.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/question/_27移除元素.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/sort/BirdSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/target/classes/com/bird/sort/BirdSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +103,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../idea/spring_data_jpa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../idea/logger" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -103,26 +120,13 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BirdArrayDeque">
+  <component name="RunManager" selected="Spring Boot.FreeMarkerApp">
     <configuration name="BirdArrayDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bird.linear.queue.BirdArrayDeque" />
       <module name="bird-leet-code" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bird.linear.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Marry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.Marry" />
-      <module name="bird-freemarker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,13 +179,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FreeMarkerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bird-freemarker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.FreeMarkerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BirdArrayDeque" />
+        <item itemvalue="Spring Boot.FreeMarkerApp" />
         <item itemvalue="Spring Boot.ExcelApp" />
+        <item itemvalue="Application.BirdArrayDeque" />
         <item itemvalue="JUnit.FreeMarkerTest.test1" />
         <item itemvalue="JUnit.FreeMarkerTest.test2" />
-        <item itemvalue="Application.Marry" />
       </list>
     </recent_temporary>
   </component>
@@ -237,7 +254,11 @@
       <workItem from="1617691800399" duration="1740000" />
       <workItem from="1617701228408" duration="4687000" />
       <workItem from="1617771131130" duration="2055000" />
-      <workItem from="1617928941078" duration="19150000" />
+      <workItem from="1617928941078" duration="20413000" />
+      <workItem from="1617969381588" duration="4000" />
+      <workItem from="1618035744311" duration="4574000" />
+      <workItem from="1618045565419" duration="1860000" />
+      <workItem from="1618114108830" duration="3817000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -393,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617954210009</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="调研提交">
+      <created>1617960492875</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1617960492875</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,58 +469,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="243" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1617710974429" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1617701246038">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1618115765728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1617701246038" />
-    <state width="1492" height="531" key="GridCell.Tab.0.bottom" timestamp="1617959487767">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618115765728" />
+    <state width="1492" height="91" key="GridCell.Tab.0.bottom" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="531" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617959487767" />
-    <state width="1492" height="531" key="GridCell.Tab.0.center" timestamp="1617959487767">
+    <state width="1492" height="91" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="91" key="GridCell.Tab.0.center" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="531" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1617959487767" />
-    <state width="1492" height="531" key="GridCell.Tab.0.left" timestamp="1617959487767">
+    <state width="1492" height="91" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="91" key="GridCell.Tab.0.left" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="531" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1617959487767" />
-    <state width="1492" height="531" key="GridCell.Tab.0.right" timestamp="1617959487767">
+    <state width="1492" height="91" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="91" key="GridCell.Tab.0.right" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="531" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1617959487767" />
-    <state width="1492" height="360" key="GridCell.Tab.1.bottom" timestamp="1617953268643">
+    <state width="1492" height="91" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="91" key="GridCell.Tab.1.bottom" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
-    <state width="1492" height="360" key="GridCell.Tab.1.center" timestamp="1617953268643">
+    <state width="1492" height="91" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="91" key="GridCell.Tab.1.center" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
-    <state width="1492" height="360" key="GridCell.Tab.1.left" timestamp="1617953268643">
+    <state width="1492" height="91" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="91" key="GridCell.Tab.1.left" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
-    <state width="1492" height="360" key="GridCell.Tab.1.right" timestamp="1617953268643">
+    <state width="1492" height="91" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="91" key="GridCell.Tab.1.right" timestamp="1618117891659">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
-    <state width="1492" height="360" key="GridCell.Tab.2.bottom" timestamp="1617953268643">
+    <state width="1492" height="91" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618117891659" />
+    <state width="1492" height="360" key="GridCell.Tab.2.bottom" timestamp="1617967667912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
-    <state width="1492" height="360" key="GridCell.Tab.2.center" timestamp="1617953268643">
+    <state width="1492" height="360" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1617967667912" />
+    <state width="1492" height="360" key="GridCell.Tab.2.center" timestamp="1617967667912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
-    <state width="1492" height="360" key="GridCell.Tab.2.left" timestamp="1617953268643">
+    <state width="1492" height="360" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1617967667912" />
+    <state width="1492" height="360" key="GridCell.Tab.2.left" timestamp="1617967667912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
-    <state width="1492" height="360" key="GridCell.Tab.2.right" timestamp="1617953268643">
+    <state width="1492" height="360" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1617967667912" />
+    <state width="1492" height="360" key="GridCell.Tab.2.right" timestamp="1617967667912">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="360" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1617953268643" />
+    <state width="1492" height="360" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1617967667912" />
     <state x="147" y="64" key="MergeDialog" timestamp="1617691927751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -505,10 +533,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617947169092" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617954217446">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1617960501037">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617954217446" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617960501037" />
     <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617691888214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -525,9 +553,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1615093719846" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617537838457">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618117647358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1617537838457" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618117647358" />
   </component>
 </project>

@@ -1,0 +1,23 @@
+spring:
+  freemarker:
+    allow-request-override: false
+    allow-session-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    suffix: .ftl
+    template-loader-path: classpath:/template
+
+#日志配置
+logging:
+  level:
+    root: info
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+  file:
+    name: ./bird.log

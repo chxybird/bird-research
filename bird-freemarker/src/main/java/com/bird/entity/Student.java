@@ -1,4 +1,4 @@
-package com.entity;
+package com.bird.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
