@@ -44,10 +44,21 @@ public class DocReportUtils {
 
     /**
      * @Author lipu
+     * @Date 2021/4/13 15:37
+     * @Description 清除数据
+     */
+    public static void flush(){
+        docMap.clear();
+    }
+
+    /**
+     * @Author lipu
      * @Date 2021/4/13 14:08
      * @Description 初始化 report/context
      */
     public static Map<String, Object> init(File file) throws Exception {
+        //清除数据
+        flush();
         //获取word模板文件的地址
         InputStream inputStream = new FileInputStream(file);
         //freemarker加载word模板
