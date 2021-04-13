@@ -12,7 +12,9 @@ import fr.opensagres.xdocreport.template.TemplateEngineKind;
 import fr.opensagres.xdocreport.template.formatter.FieldsMetadata;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.net.URLEncoder;
 import java.util.*;
 
 /**
@@ -35,6 +37,10 @@ public class DocReportUtils {
      * 容器
      */
     public static Map<String, Object> docMap = new HashMap<>();
+    /**
+     * 默认导出下载文件名称
+     */
+    public static final String WORD_NAME = "bird_word.docx";
 
     /**
      * @Author lipu
@@ -89,7 +95,7 @@ public class DocReportUtils {
         IXDocReport report = (IXDocReport) docMap.get(REPORT);
         //设置域
         FieldsMetadata fieldsMetadata = report.createFieldsMetadata();
-        fieldsMetadata.load(key, list.getClass(),true);
+        fieldsMetadata.load(key, list.getClass(), true);
         //域填充
         IContext context = (IContext) docMap.get(CONTEXT);
         context.put(key, list);
@@ -104,7 +110,7 @@ public class DocReportUtils {
         IXDocReport report = (IXDocReport) docMap.get(REPORT);
         //设置域
         FieldsMetadata fieldsMetadata = report.createFieldsMetadata();
-        fieldsMetadata.load(key, set.getClass(),true);
+        fieldsMetadata.load(key, set.getClass(), true);
         //域填充
         IContext context = (IContext) docMap.get(CONTEXT);
         context.put(key, set);
@@ -119,10 +125,26 @@ public class DocReportUtils {
         IXDocReport report = (IXDocReport) docMap.get(REPORT);
         //设置域
         FieldsMetadata fieldsMetadata = report.createFieldsMetadata();
-        fieldsMetadata.load(key, map.getClass(),true);
+        fieldsMetadata.load(key, map.getClass(), true);
         //域填充
         IContext context = (IContext) docMap.get(CONTEXT);
         context.put(key, map);
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/13 15:03
+     * @Description word文件下载
+     */
+    public static void download(HttpServletResponse response) throws Exception {
+        response.setContentType("application/octet-stream");
+        response.setCharacterEncoding("utf-8");
+        response.setHeader("Content-disposition", "attachment;filename="
+                + URLEncoder.encode(WORD_NAME, "utf-8"));
+        OutputStream outputStream=response.getOutputStream();
+        IXDocReport report = (IXDocReport) docMap.get(REPORT);
+        IContext context = (IContext) docMap.get(CONTEXT);
+        report.process(context,outputStream);
     }
 
 

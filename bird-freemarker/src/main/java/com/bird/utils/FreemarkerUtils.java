@@ -1,15 +1,24 @@
 package com.bird.utils;
 
+import com.bird.entity.Card;
+import com.bird.entity.User;
+import fr.opensagres.xdocreport.document.IXDocReport;
+import fr.opensagres.xdocreport.document.images.FileImageProvider;
+import fr.opensagres.xdocreport.document.images.IImageProvider;
+import fr.opensagres.xdocreport.document.registry.XDocReportRegistry;
+import fr.opensagres.xdocreport.template.IContext;
+import fr.opensagres.xdocreport.template.TemplateEngineKind;
+import fr.opensagres.xdocreport.template.formatter.FieldsMetadata;
 import freemarker.cache.FileTemplateLoader;
 import freemarker.cache.TemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
+import org.springframework.core.io.ClassPathResource;
 
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -64,8 +73,8 @@ public class FreemarkerUtils {
      * @Date 2021/4/13 13:34
      * @Description freemarker文件下载
      */
-    public void download(HttpServletResponse response){
-
-    }
+//    public static void download(HttpServletResponse response,){
+//
+//    }
 
 }

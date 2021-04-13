@@ -1,6 +1,10 @@
 package com.bird.controller;
 
+import com.bird.entity.Card;
+import com.bird.entity.User;
+import com.bird.utils.DocReportUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.*;
@@ -21,8 +26,6 @@ import java.util.*;
 @RequestMapping("/freemarker")
 @Slf4j
 public class FreemarkerController {
-
-    private final String WORD_NAME="bird.docx";
 
     /**
      * @Author lipu
@@ -96,11 +99,20 @@ public class FreemarkerController {
      */
     @PostMapping("/download")
     public void download(HttpServletResponse response) throws Exception {
-        response.setContentType("application/octet-stream");
-        response.setCharacterEncoding("utf-8");
-        response.setHeader("Content-disposition", "attachment;filename="
-                + URLEncoder.encode(WORD_NAME, "utf-8"));
-
-
+        //获取类路径下的word模板文件
+        ClassPathResource pathResource=new ClassPathResource("bird.docx");
+        File file = pathResource.getFile();
+        DocReportUtils.init(file);
+        //设置数据
+        User user=new User(16036024L,"小鸟",24);
+        DocReportUtils.set("user",user);
+        List<Card> cardList=new ArrayList<>();
+        cardList.add(new Card(1L,"招商银行卡"));
+        cardList.add(new Card(2L,"建设银行卡"));
+        cardList.add(new Card(3L,"邮政银行卡"));
+        cardList.add(new Card(4L,"农业银行卡"));
+        DocReportUtils.setList("cardList",cardList);
+        //下载
+        DocReportUtils.download(response);
     }
 }
