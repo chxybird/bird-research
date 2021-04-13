@@ -20,7 +20,7 @@
     <bytecodeTargetLevel>
       <module name="bird-excel" target="1.8" />
       <module name="bird-freemarker" target="1.8" />
-      <module name="bird-jdk" target="1.8" />
+      <module name="bird-jdk" target="9" />
       <module name="bird-layui" target="1.8" />
       <module name="bird-leet-code" target="1.8" />
       <module name="bird-mongodb" target="1.8" />

@@ -6,14 +6,13 @@ import lombok.NoArgsConstructor;
 
 /**
  * @Author lipu
- * @Date 2021/04/01 15:31
+ * @Date 2021/4/12 16:08
  * @Description
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Card {
     private Long id;
     private String name;
-    private Integer age;
 }

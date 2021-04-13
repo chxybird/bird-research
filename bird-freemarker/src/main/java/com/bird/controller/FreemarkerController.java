@@ -2,10 +2,14 @@ package com.bird.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.*;
 
 /**
@@ -17,6 +21,8 @@ import java.util.*;
 @RequestMapping("/freemarker")
 @Slf4j
 public class FreemarkerController {
+
+    private final String WORD_NAME="bird.docx";
 
     /**
      * @Author lipu
@@ -64,6 +70,37 @@ public class FreemarkerController {
     public ModelAndView instruct(){
         ModelAndView modelAndView=new ModelAndView();
         modelAndView.setViewName("instruct");
+        int[] arrayList={1,2,3,4,5,6,7,8,9};
+        //list指令测试
+        modelAndView.addObject("arrayList",arrayList);
+        //if elseif else 指令测试
+        Integer flag=1;
+        modelAndView.addObject("flag",flag);
         return modelAndView;
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/12 11:35
+     * @Description freemarker页面静态化调研
+     */
+    @GetMapping("/view")
+    public void view(){
+
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/13 11:29
+     * @Description freemarker+DocReport文件下载调研
+     */
+    @PostMapping("/download")
+    public void download(HttpServletResponse response) throws Exception {
+        response.setContentType("application/octet-stream");
+        response.setCharacterEncoding("utf-8");
+        response.setHeader("Content-disposition", "attachment;filename="
+                + URLEncoder.encode(WORD_NAME, "utf-8"));
+
+
     }
 }

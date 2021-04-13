@@ -11,6 +11,10 @@
 
     <artifactId>bird-freemarker</artifactId>
 
+    <properties>
+        <xdocreport.version>2.0.1</xdocreport.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -29,7 +33,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
+        <!--XDocReport依赖 word文档与freemarker的结合-->
+        <!--模板引擎相关 freemarker-->
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>fr.opensagres.xdocreport.template.freemarker</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <!--文档格式相关 word-->
+        <dependency>
+            <groupId>fr.opensagres.xdocreport</groupId>
+            <artifactId>fr.opensagres.xdocreport.document.docx</artifactId>
+            <version>2.0.1</version>
+        </dependency>
     </dependencies>
-
 
 </project>
