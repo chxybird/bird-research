@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bird.dao.RoleDao">
+
+    <resultMap id="findByUserId" type="com.bird.entity.Role">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="code" property="code"/>
+        <result column="description" property="description"/>
+        <collection property="permissionList" column="id"
+                    ofType="com.bird.entity.Permission"
+                    javaType="java.util.ArrayList"
+                    select="com.bird.dao.PermissionDao">
+        </collection>
+    </resultMap>
+
+
+    <select id="findByUserId" resultMap="findByUserId">
+        SELECT * FROM t_role WHERE role_id
+        IN (SELECT role_id FROM t_user_role WHERE user_id=#{userId});
+    </select>
+
+</mapper>

@@ -8,6 +8,7 @@ import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @Author lipu
@@ -24,6 +25,8 @@ public class Role implements Serializable , GrantedAuthority {
     private String description;
     @TableField(exist = false)
     private LoginUser loginUser;
+    @TableField(exist = false)
+    List<Permission> permissionList;
 
     @Override
     public String getAuthority() {
