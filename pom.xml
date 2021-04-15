@@ -12,6 +12,8 @@
         <module>bird-freemarker</module>
         <module>bird-task</module>
         <module>bird-mybatis-plus</module>
+        <module>bird-authority</module>
+        <module>bird-json</module>
     </modules>
 
     <parent>

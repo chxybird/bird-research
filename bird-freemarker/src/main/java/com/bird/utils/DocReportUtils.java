@@ -1,11 +1,7 @@
 package com.bird.utils;
 
-import com.bird.entity.Card;
-import com.bird.entity.User;
 import fr.opensagres.xdocreport.core.XDocReportException;
 import fr.opensagres.xdocreport.document.IXDocReport;
-import fr.opensagres.xdocreport.document.images.FileImageProvider;
-import fr.opensagres.xdocreport.document.images.IImageProvider;
 import fr.opensagres.xdocreport.document.registry.XDocReportRegistry;
 import fr.opensagres.xdocreport.template.IContext;
 import fr.opensagres.xdocreport.template.TemplateEngineKind;
@@ -56,7 +52,7 @@ public class DocReportUtils {
      * @Date 2021/4/13 14:08
      * @Description 初始化 report/context
      */
-    public static Map<String, Object> init(File file) throws Exception {
+    public static void init(File file) throws Exception {
         //清除数据
         flush();
         //获取word模板文件的地址
@@ -67,7 +63,6 @@ public class DocReportUtils {
         IContext context = report.createContext();
         docMap.put(REPORT, report);
         docMap.put(CONTEXT, context);
-        return docMap;
     }
 
     /**

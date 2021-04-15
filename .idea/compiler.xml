@@ -7,20 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bird-freemarker" />
-        <module name="bird-leet-code" />
-        <module name="bird-mybatis-plus" />
-        <module name="bird-excel" />
+        <module name="bird-authority" />
         <module name="bird-task" />
+        <module name="bird-leet-code" />
+        <module name="bird-excel" />
+        <module name="bird-mybatis-plus" />
         <module name="bird-jdk" />
+        <module name="bird-freemarker" />
         <module name="bird-mongodb" />
+        <module name="bird-json" />
         <module name="bird-layui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="bird-authority" target="1.8" />
       <module name="bird-excel" target="1.8" />
       <module name="bird-freemarker" target="1.8" />
       <module name="bird-jdk" target="9" />
+      <module name="bird-json" target="1.8" />
       <module name="bird-layui" target="1.8" />
       <module name="bird-leet-code" target="1.8" />
       <module name="bird-mongodb" target="1.8" />
@@ -31,9 +35,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bird-authority" options="-parameters" />
       <module name="bird-excel" options="-parameters" />
       <module name="bird-freemarker" options="-parameters" />
       <module name="bird-jdk" options="-parameters" />
+      <module name="bird-json" options="-parameters" />
       <module name="bird-layui" options="-parameters" />
       <module name="bird-leet-code" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />

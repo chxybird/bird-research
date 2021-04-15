@@ -1,0 +1,13 @@
+#jackson配置
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss #日期格式化
+    # 序列化相关
+    serialization:
+      indent_output: true #化输出
+    deserialization:
+      fail_on_unknown_properties: false #反序列化时对象没有json对应的属性忽略
+    defaultPropertyInclusion: NON_EMPTY #如何序列化
+    parser:
+      allow_unquoted_control_chars: true #允许特殊和转义符
+      allow_single_quotes: true #允许单引号

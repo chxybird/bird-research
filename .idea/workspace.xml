@@ -27,9 +27,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/bird-authority.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/AuthorityApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/controller/DormitoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/dao/PermissionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/dao/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/dao/RolePermissionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/dao/UserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/entity/LoginUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/entity/relation/RolePermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/entity/relation/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/utils/BCrypt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/bird-json.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/src/main/java/com/bird/JsonApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/src/main/java/com/bird/controller/BirdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/src/main/java/com/bird/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/src/main/java/com/bird/utils/JsonUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/src/main/resources/jackson常用注解.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-json/src/test/java/com/bird/JsonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_6_14_18_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_6_14_18__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_6_14_20_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_6_14_20__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_6_14_51_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_4_6_14_51__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/utils/DocReportUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/utils/DocReportUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/utils/FreemarkerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/utils/FreemarkerUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,40 +122,30 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bird-freemarker/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../idea/spring_security_distribute" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\static" />
-      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-freemarker\src\main\resources" />
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\js" />
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bird.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\static" />
+      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.FreeMarkerApp">
-    <configuration name="BirdArrayDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.linear.queue.BirdArrayDeque" />
-      <module name="bird-leet-code" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.linear.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FreeMarkerTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bird-freemarker" />
+  <component name="RunManager" selected="JUnit.JsonTest.objectAsFile">
+    <configuration name="JsonTest.jsonAsList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bird-json" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bird.*" />
@@ -121,15 +153,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.bird" />
-      <option name="MAIN_CLASS_NAME" value="com.bird.FreeMarkerTest" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="MAIN_CLASS_NAME" value="com.bird.JsonTest" />
+      <option name="METHOD_NAME" value="jsonAsList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FreeMarkerTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bird-freemarker" />
+    <configuration name="JsonTest.jsonAsMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bird-json" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bird.*" />
@@ -137,46 +169,65 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.bird" />
-      <option name="MAIN_CLASS_NAME" value="com.bird.FreeMarkerTest" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="MAIN_CLASS_NAME" value="com.bird.JsonTest" />
+      <option name="METHOD_NAME" value="jsonAsMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExcelApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="bird-excel" />
+    <configuration name="JsonTest.mapAsJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bird-json" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bird.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.ExcelApp" />
+      <option name="PACKAGE_NAME" value="com.bird" />
+      <option name="MAIN_CLASS_NAME" value="com.bird.JsonTest" />
+      <option name="METHOD_NAME" value="mapAsJson" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FreeMarkerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="bird-freemarker" />
+    <configuration name="JsonTest.objectAsFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bird-json" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bird.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.FreeMarkerApp" />
+      <option name="PACKAGE_NAME" value="com.bird" />
+      <option name="MAIN_CLASS_NAME" value="com.bird.JsonTest" />
+      <option name="METHOD_NAME" value="objectAsFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bird-json" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.JsonApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.FreeMarkerApp" />
-        <item itemvalue="JUnit.FreeMarkerTest.test4" />
-        <item itemvalue="JUnit.FreeMarkerTest.test3" />
-        <item itemvalue="Spring Boot.ExcelApp" />
-        <item itemvalue="Application.BirdArrayDeque" />
+        <item itemvalue="JUnit.JsonTest.objectAsFile" />
+        <item itemvalue="JUnit.JsonTest.mapAsJson" />
+        <item itemvalue="JUnit.JsonTest.jsonAsMap" />
+        <item itemvalue="Spring Boot.JsonApp" />
+        <item itemvalue="JUnit.JsonTest.jsonAsList" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +289,13 @@
       <workItem from="1618045565419" duration="1860000" />
       <workItem from="1618114108830" duration="16259000" />
       <workItem from="1618188516720" duration="26585000" />
-      <workItem from="1618274127086" duration="23272000" />
+      <workItem from="1618274127086" duration="28243000" />
+      <workItem from="1618318515944" duration="1725000" />
+      <workItem from="1618360037755" duration="10059000" />
+      <workItem from="1618447059690" duration="9770000" />
+      <workItem from="1618456883018" duration="202000" />
+      <workItem from="1618457101083" duration="124000" />
+      <workItem from="1618457246488" duration="11590000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -429,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618298328247</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="调研提交">
+      <created>1618302555249</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1618302555249</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,70 +529,74 @@
     <option name="LAST_COMMIT_MESSAGE" value="调研提交" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="651" y="274" key="#Notifications" timestamp="1618457256991">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="651" y="274" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1618457256991" />
     <state x="249" y="0" key="#Project_Structure" timestamp="1615028748464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1615028748464" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1617956570920">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1618447932544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1617956570920" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618447932544" />
     <state x="500" y="243" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1617710974429">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="500" y="243" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1617710974429" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1618115765728">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1618447883840">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618115765728" />
-    <state width="1492" height="256" key="GridCell.Tab.0.bottom" timestamp="1618298317061">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618447883840" />
+    <state width="1492" height="357" key="GridCell.Tab.0.bottom" timestamp="1618473593867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618298317061" />
-    <state width="1492" height="256" key="GridCell.Tab.0.center" timestamp="1618298317061">
+    <state width="1492" height="357" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618473593867" />
+    <state width="1492" height="357" key="GridCell.Tab.0.center" timestamp="1618473593867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618298317061" />
-    <state width="1492" height="256" key="GridCell.Tab.0.left" timestamp="1618298317061">
+    <state width="1492" height="357" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618473593867" />
+    <state width="1492" height="357" key="GridCell.Tab.0.left" timestamp="1618473593866">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618298317061" />
-    <state width="1492" height="256" key="GridCell.Tab.0.right" timestamp="1618298317061">
+    <state width="1492" height="357" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618473593866" />
+    <state width="1492" height="357" key="GridCell.Tab.0.right" timestamp="1618473593867">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618298317061" />
-    <state width="1492" height="256" key="GridCell.Tab.1.bottom" timestamp="1618298317062">
+    <state width="1492" height="357" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618473593867" />
+    <state width="1492" height="256" key="GridCell.Tab.1.bottom" timestamp="1618471034397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
-    <state width="1492" height="256" key="GridCell.Tab.1.center" timestamp="1618298317062">
+    <state width="1492" height="256" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618471034397" />
+    <state width="1492" height="256" key="GridCell.Tab.1.center" timestamp="1618471034397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
-    <state width="1492" height="256" key="GridCell.Tab.1.left" timestamp="1618298317062">
+    <state width="1492" height="256" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618471034397" />
+    <state width="1492" height="256" key="GridCell.Tab.1.left" timestamp="1618471034397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
-    <state width="1492" height="256" key="GridCell.Tab.1.right" timestamp="1618298317062">
+    <state width="1492" height="256" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618471034397" />
+    <state width="1492" height="256" key="GridCell.Tab.1.right" timestamp="1618471034397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
-    <state width="1492" height="256" key="GridCell.Tab.2.bottom" timestamp="1618298317062">
+    <state width="1492" height="256" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618471034397" />
+    <state width="1492" height="256" key="GridCell.Tab.2.bottom" timestamp="1618471034398">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
-    <state width="1492" height="256" key="GridCell.Tab.2.center" timestamp="1618298317062">
+    <state width="1492" height="256" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618471034398" />
+    <state width="1492" height="256" key="GridCell.Tab.2.center" timestamp="1618471034397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
-    <state width="1492" height="256" key="GridCell.Tab.2.left" timestamp="1618298317062">
+    <state width="1492" height="256" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1618471034397" />
+    <state width="1492" height="256" key="GridCell.Tab.2.left" timestamp="1618471034397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
-    <state width="1492" height="256" key="GridCell.Tab.2.right" timestamp="1618298317062">
+    <state width="1492" height="256" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1618471034397" />
+    <state width="1492" height="256" key="GridCell.Tab.2.right" timestamp="1618471034397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="256" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1618298317062" />
+    <state width="1492" height="256" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1618471034397" />
     <state x="147" y="64" key="MergeDialog" timestamp="1617691927751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -537,14 +605,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="653" y="278" width="428" height="267" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617689922812" />
-    <state x="217" y="69" width="1224" height="711" key="SettingsEditor" timestamp="1617947169092">
+    <state x="217" y="69" width="1224" height="711" key="SettingsEditor" timestamp="1618457222089">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1617947169092" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618117963694">
+    <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618457222089" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618302565010">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618117963694" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618302565010" />
     <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617691888214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -553,10 +621,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="272" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1617378100722" />
-    <state x="221" y="80" key="new project wizard" timestamp="1617689565319">
+    <state x="258" y="115" key="new project wizard" timestamp="1618448222786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="221" y="80" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1617689565319" />
+    <state x="258" y="115" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1618448222786" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1615093719846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
