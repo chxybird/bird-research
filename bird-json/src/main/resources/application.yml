@@ -2,6 +2,7 @@
 spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss #日期格式化
+    time-zone: GMT+8
     # 序列化相关
     serialization:
       indent_output: true #化输出

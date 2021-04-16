@@ -1,5 +1,6 @@
 package com.bird.utils;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -27,6 +28,9 @@ public class JsonUtils {
     private static final String JSON_SUFFIX = ".json";
 
     static {
+
+        //json序列化时候如果字段为空则不序列化该字段
+        objectMapper.setDefaultPropertyInclusion(JsonInclude.Include.NON_EMPTY);
         //JSON反序列化为对象的时候如果对象没有对应字段就忽略该字段
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         //JSON序列化时如果对象为空则不抛出异常 经调研好像不设置也不会报错
@@ -36,6 +40,7 @@ public class JsonUtils {
         //自定义序列化反序列化日期格式
         objectMapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
         objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+        objectMapper.setTimeZone(TimeZone.getTimeZone("GMT+8"));
     }
 
     /**
