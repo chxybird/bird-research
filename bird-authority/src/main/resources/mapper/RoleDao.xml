@@ -10,13 +10,13 @@
         <collection property="permissionList" column="id"
                     ofType="com.bird.entity.Permission"
                     javaType="java.util.ArrayList"
-                    select="com.bird.dao.PermissionDao">
+                    select="com.bird.dao.PermissionDao.findByRoleId">
         </collection>
     </resultMap>
 
 
     <select id="findByUserId" resultMap="findByUserId">
-        SELECT * FROM t_role WHERE role_id
+        SELECT * FROM t_role WHERE id
         IN (SELECT role_id FROM t_user_role WHERE user_id=#{userId});
     </select>
 

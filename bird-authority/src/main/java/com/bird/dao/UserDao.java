@@ -13,4 +13,5 @@ import org.springframework.stereotype.Repository;
 public interface UserDao extends BaseMapper<LoginUser> {
 
     LoginUser findByEmail(String email);
+
 }

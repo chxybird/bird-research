@@ -4,8 +4,9 @@ spring:
     url: jdbc:mysql:///bird_research?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
     username: root
     password: root
-#MP配置
-mybatis-plus:
-  #控制台输出sql语句
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+##MP配置
+#mybatis-plus:
+#  #控制台输出sql语句
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#  mapper-locations: classpath*:mapper/*.xml

@@ -1,7 +1,10 @@
 package com.bird.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @Author lipu
@@ -11,6 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/student")
 public class StudentController {
+
+
+    @GetMapping("/findAll")
+    public String findAll(){
+        return "success";
+    }
 
 
 }

@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 
@@ -28,6 +29,7 @@ public class Role implements Serializable , GrantedAuthority {
     @TableField(exist = false)
     List<Permission> permissionList;
 
+    @JsonIgnore
     @Override
     public String getAuthority() {
         return code;

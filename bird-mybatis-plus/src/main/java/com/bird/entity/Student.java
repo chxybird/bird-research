@@ -1,5 +1,7 @@
 package com.bird.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -11,7 +13,7 @@ import lombok.experimental.Accessors;
  */
 
 @Data
-@Accessors(chain = true)
+@TableName("t_student")
 public class Student {
     private Long id;
     private String name;

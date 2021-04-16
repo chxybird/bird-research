@@ -10,7 +10,7 @@
 
 
     <select id="findByRoleId" resultMap="findByRoleId">
-        SELECT * FROM t_permission WHERE permission_id IN
+        SELECT * FROM t_permission WHERE id IN
         (SELECT permission_id FROM t_role_permission WHERE role_id=#{roleId});
     </select>
 
