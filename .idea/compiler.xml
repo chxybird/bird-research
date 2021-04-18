@@ -7,20 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bird-authority" />
-        <module name="bird-task" />
-        <module name="bird-leet-code" />
-        <module name="bird-excel" />
-        <module name="bird-mybatis-plus" />
         <module name="bird-jdk" />
-        <module name="bird-freemarker" />
+        <module name="bird-task" />
+        <module name="bird-authority" />
         <module name="bird-mongodb" />
         <module name="bird-json" />
+        <module name="bird-freemarker" />
+        <module name="bird-mybatis-plus" />
+        <module name="bird-excel" />
+        <module name="bird-leet-code" />
         <module name="bird-layui" />
+        <module name="bird-utils" />
+        <module name="service-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bird-authority" target="1.8" />
+      <module name="bird-cloud" target="1.8" />
       <module name="bird-excel" target="1.8" />
       <module name="bird-freemarker" target="1.8" />
       <module name="bird-jdk" target="9" />
@@ -30,12 +33,17 @@
       <module name="bird-mongodb" target="1.8" />
       <module name="bird-mybatis-plus" target="1.8" />
       <module name="bird-research" target="1.8" />
+      <module name="bird-service" target="1.8" />
+      <module name="bird-service-common" target="1.8" />
       <module name="bird-task" target="1.8" />
+      <module name="bird-utils" target="1.8" />
+      <module name="service-common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bird-authority" options="-parameters" />
+      <module name="bird-cloud" options="-parameters" />
       <module name="bird-excel" options="-parameters" />
       <module name="bird-freemarker" options="-parameters" />
       <module name="bird-jdk" options="-parameters" />
@@ -44,7 +52,11 @@
       <module name="bird-leet-code" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />
       <module name="bird-mybatis-plus" options="-parameters" />
+      <module name="bird-service" options="-parameters" />
+      <module name="bird-service-common" options="-parameters" />
       <module name="bird-task" options="-parameters" />
+      <module name="bird-utils" options="-parameters" />
+      <module name="service-common" options="-parameters" />
     </option>
   </component>
 </project>

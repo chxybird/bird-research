@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bird-authority/bird-authority.iml" filepath="$PROJECT_DIR$/bird-authority/bird-authority.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-cloud/bird-cloud.iml" filepath="$PROJECT_DIR$/bird-cloud/bird-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-excel/bird-excel.iml" filepath="$PROJECT_DIR$/bird-excel/bird-excel.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" filepath="$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-jdk/bird-jdk.iml" filepath="$PROJECT_DIR$/bird-jdk/bird-jdk.iml" />
@@ -12,7 +13,10 @@
       <module fileurl="file://$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" filepath="$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-mybatis-plus/bird-mybatis-plus.iml" filepath="$PROJECT_DIR$/bird-mybatis-plus/bird-mybatis-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bird-research.iml" filepath="$PROJECT_DIR$/.idea/bird-research.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" filepath="$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-task/bird-task.iml" filepath="$PROJECT_DIR$/bird-task/bird-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-utils/bird-utils.iml" filepath="$PROJECT_DIR$/bird-utils/bird-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-common/service-common.iml" filepath="$PROJECT_DIR$/service-common/service-common.iml" />
     </modules>
   </component>
 </project>

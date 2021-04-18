@@ -1,5 +1,7 @@
 package com.bird.config;
 
+import com.bird.filter.security.AuthenticationFilter;
+import com.bird.filter.security.AuthorizationFilter;
 import com.bird.service.LoginUserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -9,8 +11,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.authentication.AuthenticationFilter;
 
 import javax.annotation.Resource;
 import java.beans.Customizer;
@@ -62,13 +62,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 //配置路径拦截策略
-                .antMatchers("/login").permitAll()//配置不拦截的资源
-                .antMatchers("/dormitory/**").hasAnyRole("ADMIN")
+//                .antMatchers("/**").permitAll()
+                .antMatchers("/**").hasAnyRole("ADMIN")
                 //剩余的接口随意访问
                 .anyRequest().authenticated()
-                //使用默认登录页面
-                .and().formLogin()
-                //配置关闭csrf
+                //设置自定义过滤器链
+                .and()
+                .addFilter(new AuthenticationFilter(super.authenticationManager()))
+                .addFilter(new AuthorizationFilter(super.authenticationManager()))
+                //禁用Session
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                //关闭csrf
                 .and().csrf().disable();
     }
 

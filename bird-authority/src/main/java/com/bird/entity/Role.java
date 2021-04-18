@@ -5,7 +5,9 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 
 import java.io.Serializable;
@@ -18,6 +20,8 @@ import java.util.List;
  */
 @TableName("t_role")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Role implements Serializable , GrantedAuthority {
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;

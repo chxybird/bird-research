@@ -1,5 +1,8 @@
 package com.bird.utils;
 
+import com.bird.entity.LoginUser;
+import com.bird.entity.Role;
+import com.fasterxml.jackson.core.type.TypeReference;
 import io.jsonwebtoken.*;
 
 import java.util.*;
@@ -13,11 +16,7 @@ public class JwtUtils {
     /**
      * 认证头部的KEY标识
      */
-    public static final String HEADER_FLAG = "Authorization";
-
-    public static final String HEADER = "header";
-
-    public static final String BODY = "body";
+    public static final String AUTHORIZATION = "Authorization";
 
     public static final Calendar TIME = Calendar.getInstance();
     /**
@@ -39,7 +38,7 @@ public class JwtUtils {
      * @Date 2020/12/18 20:40
      * @Description 创建jwt令牌
      */
-    public static String initJwt(Map<String, Object> map) {
+    public static String initJwt(Map<String,Object> map) {
         //设置过期时间
         TIME.add(Calendar.HOUR, 2);
         JwtBuilder builder = Jwts.builder()
@@ -49,6 +48,7 @@ public class JwtUtils {
                 .setIssuer(ISSUER)
                 //颁发时间
                 .setIssuedAt(new Date())
+                //设置其他载荷信息
                 .setClaims(map)
                 //加密算法和密钥(盐)
                 .signWith(SignatureAlgorithm.HS256, KEY)
@@ -61,27 +61,33 @@ public class JwtUtils {
      * @Date 2020/12/18 22:55
      * @Description 令牌解析
      */
-    public static Map<String, Object> parseJwt(String jwt) {
+    public static void parseJwt(String jwt) {
         //令牌解析
-        Jws<Claims> claimsJws = Jwts.parser().setSigningKey(KEY).parseClaimsJws(jwt);
-        JwsHeader header = claimsJws.getHeader();
-        Claims body = claimsJws.getBody();
-        Map<String, Object> info = new HashMap<>();
-        info.put("header", header);
-        info.put("body", body);
-        return info;
+        Jws<Claims> claimsJws = Jwts.parser()
+                .setSigningKey(KEY).parseClaimsJws(jwt);
     }
+
 
     /**
      * @Author lipu
-     * @Date 2021/1/21 17:06
-     * @Description 获取用户认证信息id
+     * @Date 2021/4/16 16:19
+     * @Description 获取用户信息
      */
-    public static Long getStaffInfo(String jwt) {
-        //令牌解析
+    public static LoginUser getUser(String jwt){
         Jws<Claims> claimsJws = Jwts.parser().setSigningKey(KEY).parseClaimsJws(jwt);
         Claims body = claimsJws.getBody();
-        return body.get("ID", Long.class);
+        LoginUser user=new LoginUser();
+        user.setId(Long.valueOf(String.valueOf(body.get("id"))));
+        user.setUsername(body.get("username").toString());
+        user.setPassword(body.get("password").toString());
+        user.setEmail(body.get("email").toString());
+        user.setPhone(body.get("phone").toString());
+        user.setIsOpen(Integer.parseInt(body.get("isOpen").toString()));
+        Object list = body.get("roleList");
+        String json = JsonUtils.entityToJson(list);
+        List<Role> roleList = JsonUtils.jsonToList(json, Role.class);
+        user.setRoleList(roleList);
+        return user;
     }
 
 
