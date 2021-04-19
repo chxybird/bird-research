@@ -11,9 +11,6 @@
 
     <artifactId>bird-service</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>bird-service-common</module>
-    </modules>
 
     <dependencies>
         <dependency>
