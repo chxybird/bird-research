@@ -18,18 +18,6 @@ import java.util.Map;
  */
 public class FreemarkerUtils {
 
-    private static Configuration configuration;
-    private static TemplateLoader templateLoader;
-
-    /**
-     * @Author lipu
-     * @Date 2021/4/13 15:41
-     * @Description 静态初始化
-     */
-    static {
-
-    }
-
     /**
      * @Author lipu
      * @Date 2021/4/13 11:44

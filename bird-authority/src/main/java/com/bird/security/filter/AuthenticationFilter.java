@@ -1,14 +1,19 @@
-package com.bird.filter.security;
+package com.bird.security.filter;
 
+import com.bird.common.CommonResult;
+import com.bird.constant.ResponseCode;
 import com.bird.entity.LoginUser;
 
+import com.bird.utils.JsonUtils;
 import com.bird.utils.JwtUtils;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import javax.servlet.FilterChain;
@@ -16,6 +21,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -51,6 +57,7 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
             log.info("用户名"+username+"密码"+password);
             //将获取的用户信息分装并执行authenticationManager.authenticate(),Security会自动调用UserDetailsService。
             UsernamePasswordAuthenticationToken authRequest=new UsernamePasswordAuthenticationToken(username,password);
+            this.setDetails(request, authRequest);
             return authenticationManager.authenticate(authRequest);
         } catch (IOException e) {
             log.info("认证失败");
@@ -82,6 +89,15 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
         log.info("token生成成功");
         //将token存入到请求头中
         response.addHeader(JwtUtils.AUTHORIZATION,token);
+        String jsonResult = JsonUtils.entityToJson(
+                new CommonResult<String>(null, ResponseCode.OK, "认证成功,token初始化成功"));
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString());
+        response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+        response.getWriter().write(jsonResult);
 
+    }
+
+    protected void setDetails(HttpServletRequest request, UsernamePasswordAuthenticationToken authRequest) {
+        authRequest.setDetails(this.authenticationDetailsSource.buildDetails(request));
     }
 }

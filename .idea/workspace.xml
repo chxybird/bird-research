@@ -27,20 +27,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-utils/bird-utils.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/factory/RestClientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/utils/JsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-common/service-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-common/src/main/java/com/bird/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/common/CommonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/constant/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/security/filter/CusLogoutFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/security/handler/BirdLogoutHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/security/handler/BirdLogoutSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/security/handler/CusAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/security/handler/CusAuthenticationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-cloud/bird-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-cloud/bird-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-utils/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-utils/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/utils/RestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/utils/RestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-common/src/main/java/com/bird/controller/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-common/src/main/java/com/bird/controller/CommonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/filter/security/AuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/security/filter/AuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/filter/security/AuthorizationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-authority/src/main/java/com/bird/security/filter/AuthorizationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/utils/FreemarkerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-freemarker/src/main/java/com/bird/utils/FreemarkerUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,22 +99,22 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\static" />
+      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bird.entity" />
+      <recent name="com.bird.utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-authority\src\main\resources\mapper" />
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-freemarker\src\main\resources" />
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\js" />
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.bird.entity" />
-      <recent name="com.bird.utils" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\static" />
-      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.RestUtils">
+  <component name="RunManager" selected="Spring Boot.AuthorityApp">
     <configuration name="RestUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bird.utils.RestUtils" />
       <module name="bird-utils" />
@@ -177,9 +176,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AuthorityApp" />
         <item itemvalue="Application.RestUtils" />
         <item itemvalue="Spring Boot.CommonServiceApp" />
-        <item itemvalue="Spring Boot.AuthorityApp" />
         <item itemvalue="JUnit.UserTest.test99" />
         <item itemvalue="JUnit.UserTest.jwt" />
       </list>
@@ -253,7 +252,10 @@
       <workItem from="1618491170245" duration="3479000" />
       <workItem from="1618528840951" duration="48526000" />
       <workItem from="1618747478372" duration="3030000" />
-      <workItem from="1618792153729" duration="22168000" />
+      <workItem from="1618792153729" duration="28645000" />
+      <workItem from="1618836190457" duration="1871000" />
+      <workItem from="1618880943201" duration="25054000" />
+      <workItem from="1619051564224" duration="10201000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -486,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618750526762</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="调研提交">
+      <created>1618818953183</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1618818953183</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,10 +543,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1618493390915" />
-    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1618813720600">
+    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1619062283537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618813720600" />
+    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1619062283537" />
+    <state x="325" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1618824554940">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="325" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1618824554940" />
     <state x="542" y="279" width="451" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1618553150653">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -558,54 +571,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618556877568" />
-    <state width="1492" height="391" key="GridCell.Tab.0.bottom" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.0.bottom" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.0.center" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.0.center" timestamp="1618922068487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.0.left" timestamp="1618818084713">
+    <state width="1477" height="378" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1618922068487" />
+    <state width="1477" height="378" key="GridCell.Tab.0.left" timestamp="1618922068487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618818084713" />
-    <state width="1492" height="391" key="GridCell.Tab.0.right" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1618922068487" />
+    <state width="1477" height="378" key="GridCell.Tab.0.right" timestamp="1618922068487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.1.bottom" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1618922068487" />
+    <state width="1477" height="378" key="GridCell.Tab.1.bottom" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.1.center" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.1.center" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.1.left" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.1.left" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.1.right" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.1.right" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.2.bottom" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.2.bottom" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.2.center" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.2.center" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.2.left" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.2.left" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
-    <state width="1492" height="391" key="GridCell.Tab.2.right" timestamp="1618818084714">
+    <state width="1477" height="378" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
+    <state width="1477" height="378" key="GridCell.Tab.2.right" timestamp="1618922068488">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="391" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1618818084714" />
+    <state width="1477" height="378" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1618922068488" />
     <state x="147" y="64" key="MergeDialog" timestamp="1617691927751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -614,14 +627,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="653" y="278" width="428" height="267" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1617689922812" />
+    <state x="430" y="113" key="RollbackChangesDialog" timestamp="1618906201491">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="430" y="113" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1618906201491" />
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor" timestamp="1618491588380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1618491588380" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618750535291">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1618818960633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618750535291" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618818960633" />
     <state x="564" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617691888214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -634,14 +651,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="234" y="98" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1618750347758" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1618551893575">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1618886821026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1618551893575" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618804970436">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1618886821026" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1618906434606">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618804970436" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1618906434606" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

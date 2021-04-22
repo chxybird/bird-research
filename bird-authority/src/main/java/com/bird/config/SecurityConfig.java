@@ -1,7 +1,10 @@
 package com.bird.config;
 
-import com.bird.filter.security.AuthenticationFilter;
-import com.bird.filter.security.AuthorizationFilter;
+import com.bird.security.filter.AuthenticationFilter;
+import com.bird.security.filter.AuthorizationFilter;
+import com.bird.security.filter.CusLogoutFilter;
+import com.bird.security.handler.CusAccessDeniedHandler;
+import com.bird.security.handler.CusAuthenticationHandler;
 import com.bird.service.LoginUserService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +16,6 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.annotation.Resource;
-import java.beans.Customizer;
 
 /**
  * @Author lipu
@@ -26,7 +28,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Resource
     private LoginUserService loginUserService;
-
+    @Resource
+    private CusAuthenticationHandler cusAuthenticationHandler;
+    @Resource
+    private CusAccessDeniedHandler cusAccessDeniedHandler;
 
 
     /**
@@ -35,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      * @Description 加密策略配置 BCrypt
      */
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder(){
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
         //加密策略
         return new BCryptPasswordEncoder();
     }
@@ -53,6 +58,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
+
+
+
     /**
      * @Author lipu
      * @Date 2021/4/16 11:14
@@ -60,11 +68,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
-                //配置路径拦截策略
-//                .antMatchers("/**").permitAll()
+        http
+                //配置认证规则
+                .authorizeRequests()
                 .antMatchers("/**").hasAnyRole("ADMIN")
-                //剩余的接口随意访问
+                //之后所有接口必须登录之后才能访问
                 .anyRequest().authenticated()
                 //设置自定义过滤器链
                 .and()
@@ -74,6 +82,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 //关闭csrf
                 .and().csrf().disable();
+
+        http.exceptionHandling()
+                //自定义认证异常处理器
+                .authenticationEntryPoint(cusAuthenticationHandler)
+                //自定义权限异常处理器
+                .accessDeniedHandler(cusAccessDeniedHandler);
+
     }
+
+
 
 }

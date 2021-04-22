@@ -1,4 +1,4 @@
-package com.bird.filter.security;
+package com.bird.security.filter;
 
 import com.bird.entity.LoginUser;
 import com.bird.utils.JwtUtils;
@@ -35,6 +35,7 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
      */
     @Override
     public void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
+        log.info("开始授权");
         //获取令牌信息
         String token = request.getHeader(JwtUtils.AUTHORIZATION);
         //如果没有登录
@@ -52,6 +53,7 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
                 UsernamePasswordAuthenticationToken anthRequest = new UsernamePasswordAuthenticationToken(user.getEmail(), null, authorityList);
                 //将对象交给Security来处理
                 SecurityContextHolder.getContext().setAuthentication(anthRequest);
+                log.info("身份认证并授权通过");
                 chain.doFilter(request, response);
             } catch (IOException e) {
                 log.info("令牌非法");
