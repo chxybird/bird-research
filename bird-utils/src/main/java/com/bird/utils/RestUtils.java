@@ -1,16 +1,20 @@
 package com.bird.utils;
 
-import com.bird.entity.Student;
-import com.bird.factory.RestClientFactory;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
+import org.apache.http.client.methods.HttpUriRequest;
 import org.springframework.http.*;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.net.URI;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
 import java.util.Map;
+
+import org.springframework.http.HttpMethod;
+
 
 /**
  * @Author lipu
@@ -136,5 +140,32 @@ public class RestUtils {
         HttpEntity<Object> entity=new HttpEntity<>(body,headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(finalUrl, method, entity, String.class);
         return responseEntity.getBody();
+    }
+
+    static class RestClientFactory extends HttpComponentsClientHttpRequestFactory {
+        @Override
+        protected HttpUriRequest createHttpUriRequest(HttpMethod httpMethod, URI uri) {
+
+            if (httpMethod==HttpMethod.GET){
+                return new RestClientFactory.HttpGetRequestWithEntity(uri);
+            }
+            return super.createHttpUriRequest(httpMethod, uri);
+        }
+
+
+        /**
+         * @Author lipu
+         * @Date 2021/4/19 14:30
+         * @Description 支持GET发送body
+         */
+        private static final class HttpGetRequestWithEntity extends HttpEntityEnclosingRequestBase {
+            public HttpGetRequestWithEntity(final URI uri) {
+                super.setURI(uri);
+            }
+            @Override
+            public String getMethod() {
+                return HttpMethod.GET.name();
+            }
+        }
     }
 }
