@@ -7,23 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bird-jdk" />
-        <module name="bird-task" />
         <module name="bird-authority" />
+        <module name="bird-leet-code" />
+        <module name="bird-task" />
+        <module name="bird-cryptology" />
+        <module name="service-common" />
+        <module name="bird-excel" />
+        <module name="bird-utils" />
+        <module name="bird-mybatis-plus" />
+        <module name="bird-jdk" />
+        <module name="bird-freemarker" />
         <module name="bird-mongodb" />
         <module name="bird-json" />
-        <module name="bird-freemarker" />
-        <module name="bird-mybatis-plus" />
-        <module name="bird-excel" />
-        <module name="bird-leet-code" />
         <module name="bird-layui" />
-        <module name="bird-utils" />
-        <module name="service-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bird-authority" target="1.8" />
       <module name="bird-cloud" target="1.8" />
+      <module name="bird-cryptology" target="1.8" />
       <module name="bird-excel" target="1.8" />
       <module name="bird-freemarker" target="1.8" />
       <module name="bird-jdk" target="9" />
@@ -44,6 +46,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bird-authority" options="-parameters" />
       <module name="bird-cloud" options="-parameters" />
+      <module name="bird-cryptology" options="-parameters" />
       <module name="bird-excel" options="-parameters" />
       <module name="bird-freemarker" options="-parameters" />
       <module name="bird-jdk" options="-parameters" />
