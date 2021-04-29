@@ -1,9 +1,13 @@
 package com.bird.utils;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.io.ClassPathResource;
 
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
+import java.io.File;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.util.HashMap;
@@ -38,10 +42,8 @@ public class RsaUtils {
             KeyPair keyPair = keyPairGenerator.genKeyPair();
             //获取公钥的BASE64编码
             PublicKey publicKey = keyPair.getPublic();
-//            String publicEncode = Base64Utils.encode(publicKey.getEncoded());
             //获取私钥的BASE64编码
             PrivateKey privateKey = keyPair.getPrivate();
-//            String privateEncode = Base64Utils.encode(privateKey.getEncoded());
             //组装公钥私钥密码对
             HashMap<String,Key> keyMap=new HashMap<>();
             keyMap.put(PUBLIC_KEY,publicKey);
@@ -58,7 +60,7 @@ public class RsaUtils {
      * @Date 2021/4/29 15:36
      * @Description 加密
      */
-    public String encrypt(String content,Map<String,Key> keyMap) {
+    public static String encrypt(String content,Map<String,Key> keyMap) {
         if (content==null){
             log.info("加密内容为空不加密");
             return null;
@@ -69,7 +71,7 @@ public class RsaUtils {
         }
         try {
             Cipher cipher=Cipher.getInstance(ALGORITHM);
-            cipher.init(Cipher.ENCRYPT_MODE, keyMap.get(PRIVATE_KEY));
+            cipher.init(Cipher.ENCRYPT_MODE, keyMap.get(PUBLIC_KEY));
             byte[] bytes = cipher.doFinal(content.getBytes(StandardCharsets.UTF_8));
             return Base64Utils.encode(bytes);
         } catch (Exception e) {
@@ -80,10 +82,54 @@ public class RsaUtils {
 
     /**
      * @Author lipu
+     * @Date 2021/4/29 17:39
+     * @Description 加密
+     */
+    public static String encrypt(String content,PublicKey publicKey) {
+        if (content==null||publicKey==null){
+            log.info("加密内容或者公钥为空不加密");
+            return null;
+        }
+        try {
+            Cipher cipher=Cipher.getInstance(ALGORITHM);
+            cipher.init(Cipher.ENCRYPT_MODE, publicKey);
+            byte[] bytes = cipher.doFinal(content.getBytes(StandardCharsets.UTF_8));
+            return Base64Utils.encode(bytes);
+        } catch (Exception e) {
+            log.info("加密失败");
+            return null;
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/29 17:41
+     * @Description 解密
+     */
+    public static String decrypt(String content,PrivateKey privateKey) {
+        if (content==null||privateKey==null){
+            log.info("解密内容为空或者私钥为空不解密");
+            return null;
+        }
+        try {
+            //BASE64解密
+            byte[] bytes = Base64Utils.decodeToBytes(content);
+            Cipher cipher=Cipher.getInstance(ALGORITHM);
+            cipher.init(Cipher.DECRYPT_MODE, privateKey);
+            return new String(cipher.doFinal(bytes),StandardCharsets.UTF_8);
+        } catch (Exception e) {
+            log.info("解密失败");
+            return null;
+        }
+    }
+
+
+    /**
+     * @Author lipu
      * @Date 2021/4/29 15:36
      * @Description 解密
      */
-    public String decrypt(String content,Map<String,Key> keyMap) {
+    public static String decrypt(String content,Map<String,Key> keyMap) {
         if (content==null){
             log.info("解密内容为空不解密");
             return null;
@@ -104,7 +150,53 @@ public class RsaUtils {
         }
     }
 
-    public static void main(String[] args) {
+    /**
+     * @Author lipu
+     * @Date 2021/4/29 16:50
+     * @Description 生成密钥对到磁盘
+     */
+    public static void initToFile(String path){
+        if (path==null){
+            log.info("没有指定公钥私钥写入路径");
+            return;
+        }
+        try{
+            Map<String, Key> keyMap = initKey();
+            Key publicKey = keyMap.get(PUBLIC_KEY);
+            Key privateKey = keyMap.get(PRIVATE_KEY);
+            //写入公钥
+            JsonUtils.entityToFile(path,PUBLIC_KEY,publicKey);
+            //写入私钥
+            JsonUtils.entityToFile(path,PRIVATE_KEY,privateKey);
+        }catch (Exception e){
+            log.info("密钥对写入磁盘失败");
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/29 17:04
+     * @Description 读取私钥
+     */
+    public static Key getPrivate(String path){
+        return JsonUtils.fileToEntity(path, RsaUtils.PRIVATE_KEY, PrivateKey.class);
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/29 17:04
+     * @Description 读取公钥
+     */
+    public static Key getPublic(String path){
+        return JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, PublicKey.class);
+    }
+
+    public static void main(String[] args) throws IOException {
+        ClassPathResource classPathResource=new ClassPathResource("rsa");
+        String path = classPathResource.getFile().getPath();
+        Key publicKey = RsaUtils.getPublic(path);
+        Key privateKey = RsaUtils.getPrivate(path);
+
 
     }
 }

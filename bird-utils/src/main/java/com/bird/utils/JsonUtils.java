@@ -147,4 +147,18 @@ public class JsonUtils {
         }
     }
 
+    /**
+     * @Author lipu
+     * @Date 2021/4/29 17:21
+     * @Description json文件读取 转实体
+     */
+    public static <T> T fileToEntity(String path,String fileName,Class<T> clazz){
+        try{
+            return objectMapper.readValue(new File(path, fileName), clazz);
+        }catch (Exception e){
+            log.info("读取文件转实体失败");
+            return null;
+        }
+    }
+
 }
