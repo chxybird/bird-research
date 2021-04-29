@@ -1,13 +1,10 @@
 package com.bird.utils;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
 
 import javax.crypto.Cipher;
-import javax.crypto.NoSuchPaddingException;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.util.HashMap;
@@ -178,8 +175,13 @@ public class RsaUtils {
      * @Date 2021/4/29 17:04
      * @Description 读取私钥
      */
-    public static Key getPrivate(String path){
-        return JsonUtils.fileToEntity(path, RsaUtils.PRIVATE_KEY, PrivateKey.class);
+    public static PrivateKey getPrivate(String path){
+        try{
+            return (PrivateKey) JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, Object.class);
+        }catch (Exception e){
+            log.info("类型转换异常,请确保文件私钥格式");
+            return null;
+        }
     }
 
     /**
@@ -187,16 +189,25 @@ public class RsaUtils {
      * @Date 2021/4/29 17:04
      * @Description 读取公钥
      */
-    public static Key getPublic(String path){
-        return JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, PublicKey.class);
+    public static PublicKey getPublic(String path){
+        try{
+            return (PublicKey) JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, Object.class);
+        }catch (Exception e){
+            log.info("类型转换异常,请确保文件公钥格式");
+            return null;
+        }
+
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         ClassPathResource classPathResource=new ClassPathResource("rsa");
         String path = classPathResource.getFile().getPath();
-        Key publicKey = RsaUtils.getPublic(path);
-        Key privateKey = RsaUtils.getPrivate(path);
-
+        PublicKey publicKey = RsaUtils.getPublic(path);
+//        PrivateKey privateKey = RsaUtils.getPrivate(path);
+//        String encrypt = RsaUtils.encrypt("小鸟程序员", publicKey);
+//        System.out.println("加密后的数据为"+encrypt);
+//        String decrypt = RsaUtils.decrypt(encrypt, privateKey);
+//        System.out.println("解密后的数据为"+decrypt);
 
     }
 }
