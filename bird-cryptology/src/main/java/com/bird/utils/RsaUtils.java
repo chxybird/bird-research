@@ -4,9 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
 
 import javax.crypto.Cipher;
-import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
+import java.security.interfaces.RSAPublicKey;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -189,20 +189,20 @@ public class RsaUtils {
      * @Date 2021/4/29 17:04
      * @Description 读取公钥
      */
-    public static PublicKey getPublic(String path){
+    public static RSAPublicKey getPublic(String path){
         try{
-            return (PublicKey) JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, Object.class);
+            return JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, RSAPublicKey.class);
         }catch (Exception e){
             log.info("类型转换异常,请确保文件公钥格式");
             return null;
         }
-
     }
 
     public static void main(String[] args) throws Exception {
         ClassPathResource classPathResource=new ClassPathResource("rsa");
         String path = classPathResource.getFile().getPath();
-        PublicKey publicKey = RsaUtils.getPublic(path);
+        RSAPublicKey aPublic = RsaUtils.getPublic(path);
+
 //        PrivateKey privateKey = RsaUtils.getPrivate(path);
 //        String encrypt = RsaUtils.encrypt("小鸟程序员", publicKey);
 //        System.out.println("加密后的数据为"+encrypt);

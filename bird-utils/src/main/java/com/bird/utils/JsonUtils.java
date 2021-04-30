@@ -1,5 +1,6 @@
 package com.bird.utils;
 
+import com.bird.entity.Student;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -10,9 +11,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import lombok.extern.slf4j.Slf4j;
 
+
 import java.io.File;
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Map;
@@ -156,13 +157,10 @@ public class JsonUtils {
      */
     public static <T> T fileToEntity(String path, String fileName, Class<T> clazz) {
         try {
-            JavaType javaType = objectMapper.getTypeFactory().constructType(JsonSubTypes.Type.class);
-            return objectMapper.readValue(new File(path, fileName + JSON_SUFFIX), javaType);
-//            return objectMapper.readValue(new File(path, fileName+JSON_SUFFIX), clazz);
+            return objectMapper.readValue(new File(path, fileName+JSON_SUFFIX), clazz);
         } catch (Exception e) {
             log.info("读取文件转实体失败");
             return null;
         }
     }
-
 }

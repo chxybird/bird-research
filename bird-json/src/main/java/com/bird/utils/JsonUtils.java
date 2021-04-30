@@ -1,18 +1,24 @@
 package com.bird.utils;
 
+import com.bird.entity.Student;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
+
 
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TimeZone;
 
 /**
  * @Author lipu
@@ -20,7 +26,6 @@ import java.util.*;
  * @Description Json工具类
  */
 @Slf4j
-@Component
 public class JsonUtils {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
@@ -88,8 +93,8 @@ public class JsonUtils {
             return null;
         }
         try {
-            return objectMapper.readValue(json, new TypeReference<List<T>>() {
-            });
+            JavaType javaType = objectMapper.getTypeFactory().constructParametricType(List.class, clazz);
+            return objectMapper.readValue(json, javaType);
         } catch (Exception e) {
             log.error("JSON转LIST失败");
             return null;
@@ -106,8 +111,8 @@ public class JsonUtils {
             return null;
         }
         try {
-            return objectMapper.readValue(json, new TypeReference<Set<T>>() {
-            });
+            JavaType javaType = objectMapper.getTypeFactory().constructParametricType(Set.class, clazz);
+            return objectMapper.readValue(json, javaType);
         } catch (Exception e) {
             log.error("JSON转SET失败");
             return null;
@@ -115,18 +120,17 @@ public class JsonUtils {
     }
 
     /**
-     * @return
      * @Author lipu
      * @Date 2021/4/15 11:28
      * @Description JSON转MAP
      */
-    public static Map<String, Object> jsonToMap(String json) {
+    public static <K, V> Map<K, V> jsonToMap(String json, Class<K> key, Class<V> value) {
         if (json == null) {
             return null;
         }
         try {
-            return objectMapper.readValue(json, new TypeReference<Map<String, Object>>() {
-            });
+            JavaType javaType = objectMapper.getTypeFactory().constructMapType(Map.class, key, value);
+            return objectMapper.readValue(json, javaType);
         } catch (JsonProcessingException e) {
             log.error("JSON转MAP失败");
             return null;
@@ -138,10 +142,10 @@ public class JsonUtils {
      * @Date 2021/4/15 15:24
      * @Description 实体转JSON文件
      */
-    public static void entityToFile(String path,String fileName, Object entity) {
+    public static void entityToFile(String path, String fileName, Object entity) {
         try {
-            objectMapper.writeValue(new File(path,fileName+JSON_SUFFIX), entity);
-        } catch (Exception e) {
+            objectMapper.writeValue(new File(path, fileName + JSON_SUFFIX), entity);
+        } catch (IOException e) {
             log.error("实体转JSON文件发生异常");
         }
     }
@@ -151,13 +155,12 @@ public class JsonUtils {
      * @Date 2021/4/29 17:21
      * @Description json文件读取 转实体
      */
-    public static <T> T fileToEntity(String path,String fileName,Class<T> clazz){
-        try{
-            return objectMapper.readValue(new File(path, fileName), clazz);
-        }catch (Exception e){
+    public static <T> T fileToEntity(String path, String fileName, Class<T> clazz) {
+        try {
+            return objectMapper.readValue(new File(path, fileName+JSON_SUFFIX), clazz);
+        } catch (Exception e) {
             log.info("读取文件转实体失败");
             return null;
         }
     }
-
 }
