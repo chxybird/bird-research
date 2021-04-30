@@ -7,6 +7,8 @@ import javax.crypto.Cipher;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
 import java.security.interfaces.RSAPublicKey;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.security.spec.X509EncodedKeySpec;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -162,9 +164,11 @@ public class RsaUtils {
             Key publicKey = keyMap.get(PUBLIC_KEY);
             Key privateKey = keyMap.get(PRIVATE_KEY);
             //写入公钥
-            JsonUtils.entityToFile(path,PUBLIC_KEY,publicKey);
+            String publicEncode = Base64Utils.encode(publicKey.getEncoded());
+            JsonUtils.entityToFile(path,PUBLIC_KEY,publicEncode);
             //写入私钥
-            JsonUtils.entityToFile(path,PRIVATE_KEY,privateKey);
+            String privateEncode = Base64Utils.encode(privateKey.getEncoded());
+            JsonUtils.entityToFile(path,PRIVATE_KEY,privateEncode);
         }catch (Exception e){
             log.info("密钥对写入磁盘失败");
         }
@@ -177,7 +181,12 @@ public class RsaUtils {
      */
     public static PrivateKey getPrivate(String path){
         try{
-            return (PrivateKey) JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, Object.class);
+            String encode = JsonUtils.fileToEntity(path, RsaUtils.PRIVATE_KEY, String.class);
+            //BASE64解码
+            byte[] bytes = Base64Utils.decodeToBytes(encode);
+            KeyFactory keyFactory=KeyFactory.getInstance(ALGORITHM);
+            PKCS8EncodedKeySpec spec=new PKCS8EncodedKeySpec(bytes);
+            return keyFactory.generatePrivate(spec);
         }catch (Exception e){
             log.info("类型转换异常,请确保文件私钥格式");
             return null;
@@ -189,9 +198,14 @@ public class RsaUtils {
      * @Date 2021/4/29 17:04
      * @Description 读取公钥
      */
-    public static RSAPublicKey getPublic(String path){
+    public static PublicKey getPublic(String path){
         try{
-            return JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, RSAPublicKey.class);
+            String encode = JsonUtils.fileToEntity(path, RsaUtils.PUBLIC_KEY, String.class);
+            //BASE64解码
+            byte[] bytes = Base64Utils.decodeToBytes(encode);
+            KeyFactory keyFactory=KeyFactory.getInstance(ALGORITHM);
+            X509EncodedKeySpec spec=new X509EncodedKeySpec(bytes);
+            return keyFactory.generatePublic(spec);
         }catch (Exception e){
             log.info("类型转换异常,请确保文件公钥格式");
             return null;
@@ -201,13 +215,14 @@ public class RsaUtils {
     public static void main(String[] args) throws Exception {
         ClassPathResource classPathResource=new ClassPathResource("rsa");
         String path = classPathResource.getFile().getPath();
-        RSAPublicKey aPublic = RsaUtils.getPublic(path);
 
-//        PrivateKey privateKey = RsaUtils.getPrivate(path);
-//        String encrypt = RsaUtils.encrypt("小鸟程序员", publicKey);
-//        System.out.println("加密后的数据为"+encrypt);
-//        String decrypt = RsaUtils.decrypt(encrypt, privateKey);
-//        System.out.println("解密后的数据为"+decrypt);
+
+        PublicKey publicKey = RsaUtils.getPublic(path);
+        PrivateKey privateKey = RsaUtils.getPrivate(path);
+        String encrypt = RsaUtils.encrypt("小鸟程序员", publicKey);
+        System.out.println("加密后的数据为"+encrypt);
+        String decrypt = RsaUtils.decrypt(encrypt, privateKey);
+        System.out.println("解密后的数据为"+decrypt);
 
     }
 }
