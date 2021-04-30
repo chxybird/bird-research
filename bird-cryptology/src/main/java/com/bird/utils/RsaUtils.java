@@ -1,6 +1,7 @@
 package com.bird.utils;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.core.io.ClassPathResource;
 
 import javax.crypto.Cipher;
@@ -209,6 +210,48 @@ public class RsaUtils {
         }catch (Exception e){
             log.info("类型转换异常,请确保文件公钥格式");
             return null;
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/30 15:25
+     * @Description 签名 私钥签名
+     */
+    public static String sign(String content,Key key){
+        try{
+            //现代密码学签名一般不会直接对消息报文签名,而是对消息摘要进行签名
+            //生成消息摘要(这里使用加密后的密文生成消息摘要)
+            String sha256Hex = DigestUtils.sha256Hex(content);
+            //签名 就是私钥加密
+            Cipher cipher=Cipher.getInstance(ALGORITHM);
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] bytes = cipher.doFinal(sha256Hex.getBytes(StandardCharsets.UTF_8));
+            return Base64Utils.encode(bytes);
+        }catch (Exception e){
+            log.info("签名失败");
+            return null;
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/4/30 15:25
+     * @Description 验签
+     */
+    public static Boolean verifySign(String sign,Key key,String content){
+        try{
+            //BASE64解码摘要
+            byte[] bytes = Base64Utils.decodeToBytes(sign);
+            //验签 就是公钥解密
+            Cipher cipher=Cipher.getInstance(ALGORITHM);
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            String s = new String(cipher.doFinal(bytes), StandardCharsets.UTF_8);
+            //对比摘要
+            return DigestUtils.sha256Hex(content).equals(s);
+        }catch (Exception e){
+            log.info("验签失败");
+            return false;
         }
     }
 }
