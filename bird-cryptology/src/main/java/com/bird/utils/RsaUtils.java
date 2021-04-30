@@ -211,18 +211,4 @@ public class RsaUtils {
             return null;
         }
     }
-
-    public static void main(String[] args) throws Exception {
-        ClassPathResource classPathResource=new ClassPathResource("rsa");
-        String path = classPathResource.getFile().getPath();
-
-
-        PublicKey publicKey = RsaUtils.getPublic(path);
-        PrivateKey privateKey = RsaUtils.getPrivate(path);
-        String encrypt = RsaUtils.encrypt("小鸟程序员", publicKey);
-        System.out.println("加密后的数据为"+encrypt);
-        String decrypt = RsaUtils.decrypt(encrypt, privateKey);
-        System.out.println("解密后的数据为"+decrypt);
-
-    }
 }
