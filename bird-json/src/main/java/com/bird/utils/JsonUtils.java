@@ -124,18 +124,19 @@ public class JsonUtils {
      * @Date 2021/4/15 11:28
      * @Description JSON转MAP
      */
-    public static <K, V> Map<K, V> jsonToMap(String json, Class<K> key, Class<V> value) {
+    public static Map<String, Object> jsonToMap(String json) {
         if (json == null) {
             return null;
         }
         try {
-            JavaType javaType = objectMapper.getTypeFactory().constructMapType(Map.class, key, value);
-            return objectMapper.readValue(json, javaType);
+            return objectMapper.readValue(json, new TypeReference<Map<String, Object>>() {
+            });
         } catch (JsonProcessingException e) {
             log.error("JSON转MAP失败");
             return null;
         }
     }
+
 
     /**
      * @Author lipu
