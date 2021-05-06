@@ -7,19 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bird-authority" />
-        <module name="bird-leet-code" />
-        <module name="bird-task" />
-        <module name="bird-cryptology" />
-        <module name="service-common" />
-        <module name="bird-excel" />
-        <module name="bird-utils" />
-        <module name="bird-mybatis-plus" />
         <module name="bird-jdk" />
-        <module name="bird-freemarker" />
+        <module name="bird-task" />
+        <module name="bird-qr" />
+        <module name="bird-cryptology" />
+        <module name="bird-authority" />
         <module name="bird-mongodb" />
         <module name="bird-json" />
+        <module name="service-common" />
+        <module name="bird-mybatis-plus" />
+        <module name="bird-excel" />
+        <module name="bird-freemarker" />
+        <module name="bird-leet-code" />
         <module name="bird-layui" />
+        <module name="bird-utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,6 +35,7 @@
       <module name="bird-leet-code" target="1.8" />
       <module name="bird-mongodb" target="1.8" />
       <module name="bird-mybatis-plus" target="1.8" />
+      <module name="bird-qr" target="1.8" />
       <module name="bird-research" target="1.8" />
       <module name="bird-service" target="1.8" />
       <module name="bird-service-common" target="1.8" />
@@ -55,6 +57,7 @@
       <module name="bird-leet-code" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />
       <module name="bird-mybatis-plus" options="-parameters" />
+      <module name="bird-qr" options="-parameters" />
       <module name="bird-service" options="-parameters" />
       <module name="bird-service-common" options="-parameters" />
       <module name="bird-task" options="-parameters" />

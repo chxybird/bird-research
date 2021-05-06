@@ -18,6 +18,7 @@
         <module>bird-utils</module>
         <module>service-common</module>
         <module>bird-cryptology</module>
+        <module>bird-qr</module>
     </modules>
 
     <packaging>pom</packaging>

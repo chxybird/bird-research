@@ -27,8 +27,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-qr/bird-qr.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-qr/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-qr/src/main/java/com/bird/QrApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-qr/src/main/java/com/bird/controller/QrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-qr/src/main/java/com/bird/utils/QrCodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-qr/src/main/resources/二维码演示.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-cryptology/src/main/java/com/bird/utils/RsaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-cryptology/src/main/java/com/bird/utils/RsaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +53,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -103,22 +116,9 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RsaUtils">
+  <component name="RunManager" selected="Spring Boot.QrApp">
     <configuration name="AesUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bird.utils.AesUtils" />
-      <module name="bird-cryptology" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Base64Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.utils.Base64Utils" />
       <module name="bird-cryptology" />
       <extension name="coverage">
         <pattern>
@@ -169,13 +169,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QrApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bird-qr" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.QrApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.QrApp" />
         <item itemvalue="Application.RsaUtils" />
         <item itemvalue="Application.Md5Utils" />
         <item itemvalue="Application.JsonUtils" />
         <item itemvalue="Application.AesUtils" />
-        <item itemvalue="Application.Base64Utils" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +268,10 @@
       <workItem from="1619493060872" duration="3481000" />
       <workItem from="1619588812694" duration="5156000" />
       <workItem from="1619656514233" duration="32995000" />
-      <workItem from="1619742809810" duration="19806000" />
+      <workItem from="1619742809810" duration="21459000" />
+      <workItem from="1619871869195" duration="3944000" />
+      <workItem from="1620201539297" duration="1870000" />
+      <workItem from="1620261769547" duration="10649000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -572,7 +588,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619767223403</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="调研提交">
+      <created>1619773176988</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1619773176988</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,54 +685,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618556877568" />
-    <state width="1492" height="216" key="GridCell.Tab.0.bottom" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.0.bottom" timestamp="1620271447312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="216" key="GridCell.Tab.0.center" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620271447312" />
+    <state width="1492" height="215" key="GridCell.Tab.0.center" timestamp="1620271447312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="216" key="GridCell.Tab.0.left" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620271447312" />
+    <state width="1492" height="215" key="GridCell.Tab.0.left" timestamp="1620271447312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="216" key="GridCell.Tab.0.right" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620271447312" />
+    <state width="1492" height="215" key="GridCell.Tab.0.right" timestamp="1620271447312">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="216" key="GridCell.Tab.1.bottom" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620271447312" />
+    <state width="1492" height="215" key="GridCell.Tab.1.bottom" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="216" key="GridCell.Tab.1.center" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
+    <state width="1492" height="215" key="GridCell.Tab.1.center" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="216" key="GridCell.Tab.1.left" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
+    <state width="1492" height="215" key="GridCell.Tab.1.left" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="216" key="GridCell.Tab.1.right" timestamp="1619771915021">
+    <state width="1492" height="215" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
+    <state width="1492" height="215" key="GridCell.Tab.1.right" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="216" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1619771915021" />
-    <state width="1492" height="382" key="GridCell.Tab.2.bottom" timestamp="1619568876648">
+    <state width="1492" height="215" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
+    <state width="1492" height="215" key="GridCell.Tab.2.bottom" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="382" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619568876648" />
-    <state width="1492" height="382" key="GridCell.Tab.2.center" timestamp="1619568876647">
+    <state width="1492" height="215" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
+    <state width="1492" height="215" key="GridCell.Tab.2.center" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="382" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1619568876647" />
-    <state width="1492" height="382" key="GridCell.Tab.2.left" timestamp="1619568876647">
+    <state width="1492" height="215" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
+    <state width="1492" height="215" key="GridCell.Tab.2.left" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="382" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1619568876647" />
-    <state width="1492" height="382" key="GridCell.Tab.2.right" timestamp="1619568876648">
+    <state width="1492" height="215" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
+    <state width="1492" height="215" key="GridCell.Tab.2.right" timestamp="1620271447313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="382" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1619568876648" />
+    <state width="1492" height="215" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1620271447313" />
     <state x="147" y="64" key="MergeDialog" timestamp="1617691927751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -726,10 +749,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1619315631625" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1619767289923">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1619773251471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619767289923" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619773251471" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1619745784937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -746,10 +769,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="272" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1617378100722" />
-    <state x="234" y="98" key="new project wizard" timestamp="1619493309350">
+    <state x="234" y="98" key="new project wizard" timestamp="1620261858552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="234" y="98" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1619493309350" />
+    <state x="234" y="98" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1620261858552" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1618886821026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

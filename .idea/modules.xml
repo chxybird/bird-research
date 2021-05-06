@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" filepath="$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" filepath="$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-mybatis-plus/bird-mybatis-plus.iml" filepath="$PROJECT_DIR$/bird-mybatis-plus/bird-mybatis-plus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-qr/bird-qr.iml" filepath="$PROJECT_DIR$/bird-qr/bird-qr.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bird-research.iml" filepath="$PROJECT_DIR$/.idea/bird-research.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" filepath="$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-task/bird-task.iml" filepath="$PROJECT_DIR$/bird-task/bird-task.iml" />
