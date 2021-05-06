@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bird-jdk" />
         <module name="bird-task" />
+        <module name="bird-provider" />
         <module name="bird-qr" />
         <module name="bird-cryptology" />
         <module name="bird-authority" />
@@ -17,15 +18,17 @@
         <module name="service-common" />
         <module name="bird-mybatis-plus" />
         <module name="bird-excel" />
-        <module name="bird-freemarker" />
+        <module name="bird-utils" />
         <module name="bird-leet-code" />
         <module name="bird-layui" />
-        <module name="bird-utils" />
+        <module name="bird-freemarker" />
+        <module name="bird-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bird-authority" target="1.8" />
       <module name="bird-cloud" target="1.8" />
+      <module name="bird-consumer" target="1.8" />
       <module name="bird-cryptology" target="1.8" />
       <module name="bird-excel" target="1.8" />
       <module name="bird-freemarker" target="1.8" />
@@ -35,7 +38,9 @@
       <module name="bird-leet-code" target="1.8" />
       <module name="bird-mongodb" target="1.8" />
       <module name="bird-mybatis-plus" target="1.8" />
+      <module name="bird-provider" target="1.8" />
       <module name="bird-qr" target="1.8" />
+      <module name="bird-rabbitmq" target="1.8" />
       <module name="bird-research" target="1.8" />
       <module name="bird-service" target="1.8" />
       <module name="bird-service-common" target="1.8" />
@@ -48,6 +53,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bird-authority" options="-parameters" />
       <module name="bird-cloud" options="-parameters" />
+      <module name="bird-consumer" options="-parameters" />
       <module name="bird-cryptology" options="-parameters" />
       <module name="bird-excel" options="-parameters" />
       <module name="bird-freemarker" options="-parameters" />
@@ -57,7 +63,9 @@
       <module name="bird-leet-code" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />
       <module name="bird-mybatis-plus" options="-parameters" />
+      <module name="bird-provider" options="-parameters" />
       <module name="bird-qr" options="-parameters" />
+      <module name="bird-rabbitmq" options="-parameters" />
       <module name="bird-service" options="-parameters" />
       <module name="bird-service-common" options="-parameters" />
       <module name="bird-task" options="-parameters" />

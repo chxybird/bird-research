@@ -13,6 +13,7 @@
       <set>
         <option value="$PROJECT_DIR$/bird-cloud/bird-service/bird-service-common/pom.xml" />
         <option value="$PROJECT_DIR$/bird-cloud/bird-service/pom.xml" />
+        <option value="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/pom.xml" />
       </set>
     </option>
   </component>

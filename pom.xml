@@ -19,6 +19,7 @@
         <module>service-common</module>
         <module>bird-cryptology</module>
         <module>bird-qr</module>
+        <module>bird-rabbitmq</module>
     </modules>
 
     <packaging>pom</packaging>
