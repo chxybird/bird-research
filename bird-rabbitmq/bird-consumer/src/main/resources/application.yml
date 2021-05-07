@@ -1,0 +1,25 @@
+server:
+  port: 13000
+spring:
+  rabbitmq:
+    host: 192.168.198.130 #rabbitmq主机地址
+    port: 5672 #端口号
+    username: bird #用户名
+    password: bird #密码
+    virtual-host: bird  #虚拟主机名称、
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///bird_research?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+
+#日志配置
+logging:
+  level:
+    root: info
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+  file:
+    name: F:\log\bird.log

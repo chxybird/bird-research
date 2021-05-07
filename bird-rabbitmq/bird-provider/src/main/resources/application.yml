@@ -1,0 +1,20 @@
+server:
+  port: 12000
+spring:
+  rabbitmq:
+    host: 192.168.198.130 #rabbitmq主机地址
+    port: 5672 #端口号
+    username: bird #用户名
+    password: bird #密码
+    virtual-host: bird  #虚拟主机名称
+    #可靠消息投递
+    publisher-confirm-type: correlated #confirmFallback
+    publisher-returns: true #returnFallback
+    template:
+      mandatory: true #指定的消息在没有被队列接收的时候强行退回
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///bird_research?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+

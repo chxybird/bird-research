@@ -9,13 +9,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/bird-cloud/bird-service/bird-service-common/pom.xml" />
-        <option value="$PROJECT_DIR$/bird-cloud/bird-service/pom.xml" />
-        <option value="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/pom.xml" />
-      </set>
-    </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

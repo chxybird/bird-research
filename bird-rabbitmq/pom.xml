@@ -16,5 +16,13 @@
         <module>bird-consumer</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.bird</groupId>
+            <artifactId>bird-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

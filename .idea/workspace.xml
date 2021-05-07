@@ -27,9 +27,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
-      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/bird-consumer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/ConsumerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/component/CouponComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/config/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/dao/CouponDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/entity/Coupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/mq/Direct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/mq/Fanout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/java/com/bird/mq/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/bird-provider.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/java/com/bird/ProviderApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/java/com/bird/config/RabbitMqConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/java/com/bird/config/mq/DirectConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/java/com/bird/config/mq/FanoutConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/java/com/bird/config/mq/TopicConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/java/com/bird/controller/CouponController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/java/com/bird/entity/Coupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/src/test/java/RabbitMqTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-rabbitmq.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-consumer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bird-rabbitmq/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +72,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -86,7 +117,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -104,79 +135,70 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.QrApp">
-    <configuration name="AesUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.utils.AesUtils" />
-      <module name="bird-cryptology" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Spring Boot.ConsumerApp">
+    <configuration name="RabbitMqTest.direct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bird-provider" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RabbitMqTest" />
+      <option name="METHOD_NAME" value="direct" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.utils.JsonUtils" />
-      <module name="bird-utils" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="RabbitMqTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bird-provider" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RabbitMqTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Md5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.utils.Md5Utils" />
-      <module name="bird-cryptology" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="RabbitMqTest.topic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bird-provider" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RabbitMqTest" />
+      <option name="METHOD_NAME" value="topic" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RsaUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.bird.utils.RsaUtils" />
-      <module name="bird-cryptology" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QrApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="bird-qr" />
+    <configuration name="ConsumerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bird-consumer" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bird.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.QrApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.ConsumerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bird-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.ProviderApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.QrApp" />
-        <item itemvalue="Application.RsaUtils" />
-        <item itemvalue="Application.Md5Utils" />
-        <item itemvalue="Application.JsonUtils" />
-        <item itemvalue="Application.AesUtils" />
+        <item itemvalue="Spring Boot.ConsumerApp" />
+        <item itemvalue="JUnit.RabbitMqTest.topic" />
+        <item itemvalue="JUnit.RabbitMqTest.direct" />
+        <item itemvalue="JUnit.RabbitMqTest.test" />
+        <item itemvalue="Spring Boot.ProviderApp" />
       </list>
     </recent_temporary>
   </component>
@@ -260,6 +282,8 @@
       <workItem from="1619871869195" duration="3944000" />
       <workItem from="1620201539297" duration="1870000" />
       <workItem from="1620261769547" duration="13255000" />
+      <workItem from="1620280568854" duration="16989000" />
+      <workItem from="1620347437832" duration="8342000" />
     </task>
     <task id="LOCAL-00001" summary="调研初始化">
       <created>1611320611899</created>
@@ -590,7 +614,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620273018988</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="调研提交">
+      <created>1620280679894</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1620280679894</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,38 +711,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618556877568" />
-    <state width="1492" height="215" key="GridCell.Tab.0.bottom" timestamp="1620280560690">
+    <state width="1492" height="302" key="GridCell.Tab.0.bottom" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620280560690" />
-    <state width="1492" height="215" key="GridCell.Tab.0.center" timestamp="1620280560690">
+    <state width="1492" height="302" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
+    <state width="1492" height="302" key="GridCell.Tab.0.center" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620280560690" />
-    <state width="1492" height="215" key="GridCell.Tab.0.left" timestamp="1620280560690">
+    <state width="1492" height="302" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
+    <state width="1492" height="302" key="GridCell.Tab.0.left" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620280560690" />
-    <state width="1492" height="215" key="GridCell.Tab.0.right" timestamp="1620280560690">
+    <state width="1492" height="302" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
+    <state width="1492" height="302" key="GridCell.Tab.0.right" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620280560690" />
-    <state width="1492" height="215" key="GridCell.Tab.1.bottom" timestamp="1620280560691">
+    <state width="1492" height="302" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
+    <state width="1492" height="302" key="GridCell.Tab.1.bottom" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620280560691" />
-    <state width="1492" height="215" key="GridCell.Tab.1.center" timestamp="1620280560691">
+    <state width="1492" height="302" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
+    <state width="1492" height="302" key="GridCell.Tab.1.center" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1620280560691" />
-    <state width="1492" height="215" key="GridCell.Tab.1.left" timestamp="1620280560691">
+    <state width="1492" height="302" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
+    <state width="1492" height="302" key="GridCell.Tab.1.left" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1620280560691" />
-    <state width="1492" height="215" key="GridCell.Tab.1.right" timestamp="1620280560691">
+    <state width="1492" height="302" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
+    <state width="1492" height="302" key="GridCell.Tab.1.right" timestamp="1620356602977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="215" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1620280560691" />
+    <state width="1492" height="302" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1620356602977" />
     <state width="1492" height="215" key="GridCell.Tab.2.bottom" timestamp="1620280560691">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -740,14 +771,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="430" y="113" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1618906201491" />
-    <state x="217" y="69" width="1224" height="711" key="SettingsEditor" timestamp="1619315631625">
+    <state x="217" y="69" width="1224" height="711" key="SettingsEditor" timestamp="1620284518591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1619315631625" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1620273026211">
+    <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620284518591" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1620280689603">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1620273026211" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1620280689603" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1619745784937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -764,10 +795,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="272" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1617378100722" />
-    <state x="241" y="109" key="new project wizard" timestamp="1620280515895">
+    <state x="241" y="109" key="new project wizard" timestamp="1620280651138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="241" y="109" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1620280515895" />
+    <state x="241" y="109" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1620280651138" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1618886821026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
