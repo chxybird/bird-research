@@ -20,6 +20,7 @@
         <module>bird-cryptology</module>
         <module>bird-qr</module>
         <module>bird-rabbitmq</module>
+        <module>bird-elastic</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -9,19 +9,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bird-jdk" />
         <module name="bird-task" />
-        <module name="bird-provider" />
+        <module name="bird-freemarker" />
         <module name="bird-qr" />
+        <module name="bird-elastic" />
         <module name="bird-cryptology" />
         <module name="bird-authority" />
         <module name="bird-mongodb" />
         <module name="bird-json" />
         <module name="service-common" />
         <module name="bird-mybatis-plus" />
+        <module name="bird-provider" />
         <module name="bird-excel" />
-        <module name="bird-utils" />
         <module name="bird-leet-code" />
         <module name="bird-layui" />
-        <module name="bird-freemarker" />
+        <module name="bird-utils" />
         <module name="bird-consumer" />
       </profile>
     </annotationProcessing>
@@ -30,6 +31,7 @@
       <module name="bird-cloud" target="1.8" />
       <module name="bird-consumer" target="1.8" />
       <module name="bird-cryptology" target="1.8" />
+      <module name="bird-elastic" target="1.8" />
       <module name="bird-excel" target="1.8" />
       <module name="bird-freemarker" target="1.8" />
       <module name="bird-jdk" target="9" />
@@ -55,6 +57,7 @@
       <module name="bird-cloud" options="-parameters" />
       <module name="bird-consumer" options="-parameters" />
       <module name="bird-cryptology" options="-parameters" />
+      <module name="bird-elastic" options="-parameters" />
       <module name="bird-excel" options="-parameters" />
       <module name="bird-freemarker" options="-parameters" />
       <module name="bird-jdk" options="-parameters" />
