@@ -16,9 +16,11 @@ public class EsTest {
 
     @Test
     public void test(){
-        HighLevelUtils.initIndex("test-index");
-        System.out.println(HighLevelUtils.exist("test-index"));
-        HighLevelUtils.deleteIndex("test-index");
-        System.out.println(HighLevelUtils.exist("test-index"));
+//        HighLevelUtils.initIndex("test-index");
+//        System.out.println(HighLevelUtils.exist("test-index"));
+//        HighLevelUtils.deleteIndex("test-index");
+//        System.out.println(HighLevelUtils.exist("test-index"));
+        HighLevelUtils.getIndex("test-index");
+
     }
 }

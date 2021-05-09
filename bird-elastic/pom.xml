@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bird-elastic</artifactId>
+    <properties>
+        <!--自定义高级客户端版本-->
+        <elasticsearch.version>7.9.2</elasticsearch.version>
+    </properties>
 
     <dependencies>
         <dependency>
