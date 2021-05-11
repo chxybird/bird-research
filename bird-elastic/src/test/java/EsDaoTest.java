@@ -161,16 +161,4 @@ public class EsDaoTest {
         List<Student> content = studentPage.getContent();
         content.forEach(System.out::println);
     }
-
-
-    /**
-     * @Author lipu
-     * @Date 2021/5/11 15:30
-     * @Description 条件查询
-     */
-    public void queryCondition(){
-
-    }
-
-
 }
