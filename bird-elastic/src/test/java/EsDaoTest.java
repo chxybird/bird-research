@@ -30,6 +30,18 @@ public class EsDaoTest {
     @Resource
     private EsStudentDao esStudentDao;
 
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/11 17:39
+     * @Description 查询索引库中文档的数量
+     */
+    @Test
+    public void count(){
+        long count = esStudentDao.count();
+        System.out.println(count);
+    }
+
     /**
      * @Author lipu
      * @Date 2021/5/11 9:20

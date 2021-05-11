@@ -27,9 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
-      <change afterPath="$PROJECT_DIR$/bird-elastic/src/test/java/EsTemplateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bird-elastic/src/test/java/EsDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-elastic/src/test/java/EsDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-elastic/src/test/java/EsTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-elastic/src/test/java/EsTemplateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-layui\src\main\resources\lay-ui" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EsDaoTest.queryPageSort">
+  <component name="RunManager" selected="JUnit.EsDaoTest.count">
     <configuration name="EsDaoTest.addOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bird-elastic" />
       <option name="PACKAGE_NAME" value="" />
@@ -116,11 +116,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsDaoTest.queryDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EsDaoTest.count" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bird-elastic" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EsDaoTest" />
-      <option name="METHOD_NAME" value="queryDocument" />
+      <option name="METHOD_NAME" value="count" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EsDaoTest.count" />
         <item itemvalue="JUnit.EsDaoTest.queryPageSort" />
         <item itemvalue="JUnit.EsDaoTest.querySort" />
         <item itemvalue="JUnit.EsDaoTest.addOne" />
         <item itemvalue="JUnit.EsDaoTest.queryPage" />
-        <item itemvalue="JUnit.EsDaoTest.queryDocument" />
       </list>
     </recent_temporary>
   </component>
@@ -255,14 +255,7 @@
       <workItem from="1620651030970" duration="741000" />
       <workItem from="1620693832173" duration="13594000" />
       <workItem from="1620719065388" duration="391000" />
-      <workItem from="1620719460165" duration="5615000" />
-    </task>
-    <task id="LOCAL-00005" summary="调研提交">
-      <created>1615044529288</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1615044529288</updated>
+      <workItem from="1620719460165" duration="7667000" />
     </task>
     <task id="LOCAL-00006" summary="调研提交">
       <created>1615132598457</created>
@@ -600,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620722817503</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="调研提交">
+      <created>1620725690806</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1620725690806</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,22 +690,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620454000106" />
-    <state width="1492" height="422" key="GridCell.Tab.0.bottom" timestamp="1620722749192">
+    <state width="1492" height="422" key="GridCell.Tab.0.bottom" timestamp="1620726011727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="422" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620722749192" />
-    <state width="1492" height="422" key="GridCell.Tab.0.center" timestamp="1620722749191">
+    <state width="1492" height="422" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620726011727" />
+    <state width="1492" height="422" key="GridCell.Tab.0.center" timestamp="1620726011727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="422" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620722749191" />
-    <state width="1492" height="422" key="GridCell.Tab.0.left" timestamp="1620722749191">
+    <state width="1492" height="422" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620726011727" />
+    <state width="1492" height="422" key="GridCell.Tab.0.left" timestamp="1620726011727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="422" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620722749191" />
-    <state width="1492" height="422" key="GridCell.Tab.0.right" timestamp="1620722749192">
+    <state width="1492" height="422" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620726011727" />
+    <state width="1492" height="422" key="GridCell.Tab.0.right" timestamp="1620726011727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="422" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620722749192" />
+    <state width="1492" height="422" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620726011727" />
     <state width="1492" height="423" key="GridCell.Tab.1.bottom" timestamp="1620570892272">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -758,10 +758,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620284518591" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1620722888980">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1620725715392">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1620722888980" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1620725715392" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1619745784937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
