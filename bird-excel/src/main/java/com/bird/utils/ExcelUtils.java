@@ -31,7 +31,7 @@ public class ExcelUtils {
     /**
      * 默认导出excel文件名称
      */
-    private final String EXCEL_NAME = "信息表.xlsx";
+    private static final String EXCEL_NAME = "信息表.xlsx";
 
     /**
      * @Author lipu

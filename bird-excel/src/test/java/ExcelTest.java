@@ -15,6 +15,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.ResourceUtils;
 
 import javax.annotation.Resource;
 import java.io.File;
@@ -83,7 +84,7 @@ public class ExcelTest {
      */
     @Test
     public void test3() throws Exception {
-        //创建工作簿 HSSFWorkbook是低版本 XSSFWorkbook是高版本 高版本后缀为.xls 低版本后缀为.xlsx
+        //创建工作簿 HSSFWorkbook是低版本 XSSFWorkbook是高版本 低版本后缀为.xls 高版本后缀为.xlsx
         Workbook workbook=new HSSFWorkbook();
         //创建工作表
         Sheet sheet = workbook.createSheet("sheet");
@@ -196,11 +197,38 @@ public class ExcelTest {
      * @Description 使用模板创建EXCEL文档
      */
     @Test
-    public void test6(){
+    public void test6() throws Exception {
         //读取模板
+        String path = ResourceUtils.getURL("classpath:excel").getPath();
+        File file=new File(path,"template.xlsx");
+        Workbook workbook=new XSSFWorkbook(file);
         //获取数据
+        List<Student> studentList = studentMapper.selectList(null);
         //数据绑定
+        Sheet sheet = workbook.getSheetAt(0);
+        //从第最后一行的下一行开始填充数据
+        int lastRowNum = sheet.getLastRowNum();
+        Row lastRow = sheet.getRow(lastRowNum);
+        //根据列生成数据
+        short lastCellNum = lastRow.getLastCellNum();
+        for (Student student:studentList) {
+            Row row = sheet.createRow(++lastRowNum);
+            for (int i = 0; i < lastCellNum; i++) {
+                Cell cell = row.createCell(i);
+                if (i==0){
+                    cell.setCellValue(student.getId());
+                }else if (i==1){
+                    cell.setCellValue(student.getName());
+                }else if (i==2){
+                    cell.setCellValue(student.getAge());
+                }else if (i==3){
+                    cell.setCellValue(student.getSex());
+                }
+            }
+        }
         //输出文件
+        FileOutputStream fileOutputStream=new FileOutputStream(new File("F:\\","bird.xlsx"));
+        workbook.write(fileOutputStream);
     }
 
 }
