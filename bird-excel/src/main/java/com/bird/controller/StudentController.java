@@ -2,10 +2,8 @@ package com.bird.controller;
 
 import com.bird.entity.Student;
 import com.bird.service.StudentService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
@@ -44,5 +42,10 @@ public class StudentController {
     @PostMapping("/download")
     public void download(HttpServletResponse response) throws IOException {
         studentService.download(response);
+    }
+
+    @PostMapping("/upload")
+    public void upload(@RequestParam("file") MultipartFile file){
+        studentService.upload(file);
     }
 }

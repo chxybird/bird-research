@@ -1,7 +1,10 @@
 package com.bird.service.impl;
 
+import com.alibaba.excel.ExcelReader;
+import com.alibaba.excel.read.builder.ExcelReaderBuilder;
 import com.bird.dao.StudentMapper;
 import com.bird.entity.Student;
+import com.bird.listener.StudentListener;
 import com.bird.service.StudentService;
 import com.bird.utils.ExcelUtils;
 import org.springframework.stereotype.Service;
@@ -53,6 +56,6 @@ public class StudentImpl implements StudentService {
      */
     @Override
     public void upload(MultipartFile file) {
-
+        excelUtils.upload(file,Student.class,new StudentListener());
     }
 }

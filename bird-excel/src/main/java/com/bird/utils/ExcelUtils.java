@@ -1,15 +1,20 @@
 package com.bird.utils;
 
 import com.alibaba.excel.EasyExcel;
+import com.alibaba.excel.event.AnalysisEventListener;
+import com.alibaba.excel.read.builder.ExcelReaderBuilder;
+import com.alibaba.excel.read.builder.ExcelReaderSheetBuilder;
 import com.alibaba.excel.write.builder.ExcelWriterBuilder;
 import com.alibaba.excel.write.builder.ExcelWriterSheetBuilder;
 import com.bird.entity.Student;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Collection;
@@ -21,6 +26,7 @@ import java.util.List;
  * @Description excel工具类
  */
 @Component
+@Slf4j
 public class ExcelUtils {
     /**
      * 默认导出excel文件名称
@@ -52,8 +58,17 @@ public class ExcelUtils {
      * @Date 2021/4/9 9:27
      * @Description 导入excel
      */
-    public void upload(MultipartFile file){
-        //获取文件
+    public void upload(MultipartFile file, Class<?> clazz, AnalysisEventListener<?> listener){
+        try {
+            InputStream inputStream = file.getInputStream();
+            ExcelReaderBuilder builder=EasyExcel.read(inputStream,clazz,listener);
+            //获取具体的工作表Sheet
+            ExcelReaderSheetBuilder sheet = builder.sheet();
+            //读取工作表内容
+            sheet.doRead();
+        } catch (Exception e) {
+            log.info("导入excel失败");
+        }
     }
 
 }
