@@ -1,12 +1,20 @@
 package com.bird.entity;
 
 import com.alibaba.excel.annotation.ExcelIgnore;
+import com.alibaba.excel.annotation.ExcelIgnoreUnannotated;
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.annotation.write.style.ColumnWidth;
+import com.alibaba.excel.annotation.write.style.ContentLoopMerge;
+import com.alibaba.excel.annotation.write.style.ContentStyle;
+import com.alibaba.excel.annotation.write.style.HeadFontStyle;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import org.apache.poi.ss.usermodel.BorderStyle;
+import org.apache.poi.ss.usermodel.HorizontalAlignment;
+import org.apache.poi.ss.usermodel.VerticalAlignment;
 
 /**
  * @Author lipu
@@ -15,6 +23,15 @@ import lombok.Data;
  */
 @Data
 @TableName("t_student")
+@ContentStyle(
+        horizontalAlignment= HorizontalAlignment.CENTER,
+        verticalAlignment = VerticalAlignment.CENTER,
+        borderTop = BorderStyle.THIN,
+        borderBottom = BorderStyle.THIN,
+        borderLeft = BorderStyle.THIN,
+        borderRight = BorderStyle.THIN
+)
+@HeadFontStyle(fontName = "黑体")
 public class Student {
     @TableId(value = "id", type = IdType.AUTO)
     @ExcelProperty("序号")
@@ -36,4 +53,9 @@ public class Student {
     private Integer chineseGrade;
     @ExcelIgnore
     private Long dId;
+    @ExcelProperty("总人数")
+    @ColumnWidth(20)
+    @ContentLoopMerge(eachRow = 20)
+    @TableField(exist = false)
+    private Integer count;
 }
