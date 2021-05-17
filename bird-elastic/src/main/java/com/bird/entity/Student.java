@@ -25,7 +25,7 @@ import java.util.Date;
 public class Student {
     @Id
     private String id;
-    @Field(type = FieldType.Text,store = true,analyzer = "ik_smart")
+    @Field(type = FieldType.Text,store = true,analyzer = "ik_max_word")
     private String name;
     @Field(type = FieldType.Long,store = true)
     private Integer age;
@@ -40,4 +40,6 @@ public class Student {
     @Field(type = FieldType.Date,format = DateFormat.custom,pattern = "yyyy-MM-dd HH:mm:ss")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern ="yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date createDate;
+    @Field(type = FieldType.Text,store = true,analyzer = "ik_smart")
+    private String description;
 }

@@ -50,17 +50,17 @@ public class EsDaoTest {
     @Test
     public void addOne(){
         //添加一条数据 如果不指定ID,ES会随机生成ID
-        esStudentDao.save(new Student(null,"王五",20,"男",120,110,150, new Date()));
+        esStudentDao.save(new Student(null,"王五",20,"男",120,110,150, new Date(),"王五今年20岁,目前工作在杭州一家软件公司,方向是大数据"));
     }
 
     @Test
     public void addBatch(){
         //批量添加数据
         List<Student> studentList=new ArrayList<>(10);
-        studentList.add(new Student(null,"李四",23,"男",110,128,141, new Date()));
-        studentList.add(new Student(null,"小红",20,"女",92,145,125, new Date()));
+        studentList.add(new Student(null,"李四",23,"男",110,128,141, new Date(),"李四今年23岁,目前工作在上海一家软件公司,方向是JAVA开发"));
+        studentList.add(new Student(null,"小红",20,"女",92,145,125, new Date(),"小红今年20岁,目前工作在北京一家软件公司,方向是WEB前端工程师"));
         //不指定主键会随机生成主键
-        studentList.add(new Student(null,"小莉",22,"女",100,115,125, new Date()));
+        studentList.add(new Student(null,"小莉",22,"女",100,115,125, new Date(),"小莉今年22岁,目前工作在广州一家软件公司,方向是UI"));
         esStudentDao.saveAll(studentList);
     }
 

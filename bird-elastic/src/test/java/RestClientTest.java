@@ -18,9 +18,9 @@ public class RestClientTest {
     public void test(){
 //        HighLevelUtils.initIndex("test-index");
 //        System.out.println(HighLevelUtils.exist("test-index"));
-//        HighLevelUtils.deleteIndex("test-index");
+        HighLevelUtils.deleteIndex("student");
 //        System.out.println(HighLevelUtils.exist("test-index"));
-        HighLevelUtils.getIndex("test-index");
+//        HighLevelUtils.getIndex("test-index");
 
     }
 }
