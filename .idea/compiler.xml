@@ -9,21 +9,24 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bird-jdk" />
         <module name="bird-task" />
-        <module name="bird-freemarker" />
+        <module name="bird-zk-service-A" />
         <module name="bird-qr" />
         <module name="bird-elastic" />
         <module name="bird-cryptology" />
         <module name="bird-authority" />
         <module name="bird-mongodb" />
         <module name="bird-json" />
-        <module name="service-common" />
+        <module name="bird-freemarker" />
         <module name="bird-mybatis-plus" />
         <module name="bird-provider" />
         <module name="bird-excel" />
         <module name="bird-leet-code" />
+        <module name="bird-zk-service-X" />
+        <module name="service-common" />
         <module name="bird-layui" />
         <module name="bird-utils" />
         <module name="bird-consumer" />
+        <module name="bird-webflux" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -48,6 +51,9 @@
       <module name="bird-service-common" target="1.8" />
       <module name="bird-task" target="1.8" />
       <module name="bird-utils" target="1.8" />
+      <module name="bird-webflux" target="1.8" />
+      <module name="bird-zk-service-A" target="1.8" />
+      <module name="bird-zk-service-X" target="1.8" />
       <module name="service-common" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -73,6 +79,9 @@
       <module name="bird-service-common" options="-parameters" />
       <module name="bird-task" options="-parameters" />
       <module name="bird-utils" options="-parameters" />
+      <module name="bird-webflux" options="-parameters" />
+      <module name="bird-zk-service-A" options="-parameters" />
+      <module name="bird-zk-service-X" options="-parameters" />
       <module name="service-common" options="-parameters" />
     </option>
   </component>

@@ -256,7 +256,7 @@ public class EsTemplateTest {
         SearchHits<Student> searchHits = elasticsearchTemplate.search(searchQuery, Student.class);
         //获取指标结果或者桶
         Aggregations aggregations = searchHits.getAggregations();
-        if (aggregations!=null){
+        if (aggregations != null) {
             //获取totalMathGrade指标结果
             ParsedSum totalMathGrade = aggregations.get("totalMathGrade");
             //结果集 type 指标类型 value指标值 name自定义的指标名称
@@ -265,25 +265,73 @@ public class EsTemplateTest {
             System.out.println(totalMathGrade.getName());
             //获取maxAge指标结果
             Map<String, Aggregation> map = aggregations.getAsMap();
-            ParsedMax maxAge =(ParsedMax) map.get("maxAge");
-            System.out.println("指标类型为:"+maxAge.getType()+"指标为:"+maxAge.getName()+"指标值为:"+maxAge.getValue());
+            ParsedMax maxAge = (ParsedMax) map.get("maxAge");
+            System.out.println("指标类型为:" + maxAge.getType() + "指标为:" + maxAge.getName() + "指标值为:" + maxAge.getValue());
             //获取sexAggregation聚合指标
-            ParsedTerms sexAggregation =(ParsedTerms) map.get("sexAggregation");
+            ParsedTerms sexAggregation = (ParsedTerms) map.get("sexAggregation");
             //获取sexAggregation的桶结果集
             List<? extends Terms.Bucket> bucketList = sexAggregation.getBuckets();
-            bucketList.forEach(item->{
+            bucketList.forEach(item -> {
                 ParsedAvg sexAggregationChineseGradeAvg = item.getAggregations().get("sexAggregationChineseGradeAvg");
                 ParsedMin sexAggregationEnglishGradeMin = item.getAggregations().get("sexAggregationEnglishGradeMin");
-                System.out.println(sexAggregationChineseGradeAvg.getName()+sexAggregationChineseGradeAvg.getValue());
-                System.out.println(sexAggregationEnglishGradeMin.getName()+sexAggregationEnglishGradeMin.getValue());
+                System.out.println(sexAggregationChineseGradeAvg.getName() + sexAggregationChineseGradeAvg.getValue());
+                System.out.println(sexAggregationEnglishGradeMin.getName() + sexAggregationEnglishGradeMin.getValue());
             });
 
         }
-
-
-
     }
 
+    /**
+     * @Author lipu
+     * @Date 2021/5/18 9:15
+     * @Description 多条件查询 补1 should用法 等价于或者
+     */
+    @Test
+    public void test10() {
+        NativeSearchQueryBuilder builder = new NativeSearchQueryBuilder();
+        //年龄为23 或者 年龄为24的学生信息
+        NativeSearchQuery searchQuery = builder.withQuery(QueryBuilders.boolQuery()
+                //年龄为23
+                .should(QueryBuilders.termQuery("age", 23))
+                //年龄为24
+                .should(QueryBuilders.termQuery("age",22))).build();
+        SearchHits<Student> result = elasticsearchTemplate.search(searchQuery, Student.class);
+        List<SearchHit<Student>> searchHits = result.getSearchHits();
+        //处理结果集
+        List<Student> studentList = new ArrayList<>();
+        searchHits.forEach(item -> {
+            Student student = item.getContent();
+            studentList.add(student);
+        });
+        studentList.forEach(System.out::println);
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/18 17:20
+     * @Description 多条件查询 补2 should+must的正确用法
+     * 使用should作为一个条件与多个should组合成多条件
+     */
+    @Test
+    public void test11() {
+        NativeSearchQueryBuilder builder = new NativeSearchQueryBuilder();
+        //年龄必须为20且数学成绩大于100的学生 或者 所有女学生
+        NativeSearchQuery searchQuery = builder.withQuery(QueryBuilders.boolQuery()
+                .should(QueryBuilders.boolQuery().must(QueryBuilders.termQuery("sex","女")))
+                .should(QueryBuilders.boolQuery()
+                        .must(QueryBuilders.rangeQuery("mathGrade").gt(100))
+                        .must(QueryBuilders.termQuery("age",20)))
+               ).build();
+        SearchHits<Student> result = elasticsearchTemplate.search(searchQuery, Student.class);
+        List<SearchHit<Student>> searchHits = result.getSearchHits();
+        //处理结果集
+        List<Student> studentList = new ArrayList<>();
+        searchHits.forEach(item -> {
+            Student student = item.getContent();
+            studentList.add(student);
+        });
+        studentList.forEach(System.out::println);
+    }
 
 
 }

@@ -21,6 +21,7 @@
         <module>bird-qr</module>
         <module>bird-rabbitmq</module>
         <module>bird-elastic</module>
+        <module>bird-webflux</module>
     </modules>
 
     <packaging>pom</packaging>

@@ -1,0 +1,5 @@
+server:
+  port: 13145
+spring:
+  application:
+    name: bird-zk-service-X

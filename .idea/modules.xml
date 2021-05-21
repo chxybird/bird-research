@@ -22,6 +22,9 @@
       <module fileurl="file://$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" filepath="$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-task/bird-task.iml" filepath="$PROJECT_DIR$/bird-task/bird-task.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-utils/bird-utils.iml" filepath="$PROJECT_DIR$/bird-utils/bird-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-webflux/bird-webflux.iml" filepath="$PROJECT_DIR$/bird-webflux/bird-webflux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-cloud/bird-service/bird-zk-service-A/bird-zk-service-A.iml" filepath="$PROJECT_DIR$/bird-cloud/bird-service/bird-zk-service-A/bird-zk-service-A.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-cloud/bird-service/bird-zk-service-X/bird-zk-service-X.iml" filepath="$PROJECT_DIR$/bird-cloud/bird-service/bird-zk-service-X/bird-zk-service-X.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-common/service-common.iml" filepath="$PROJECT_DIR$/service-common/service-common.iml" />
     </modules>
   </component>

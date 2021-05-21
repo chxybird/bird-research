@@ -11,6 +11,11 @@
 
     <artifactId>bird-service</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>bird-zk-service-A</module>
+        <module>bird-zk-service-X</module>
+    </modules>
+
 
     <dependencies>
         <dependency>
@@ -25,7 +30,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
+        <!--curator工具依赖 操作zk-->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>5.1.0</version>
+        </dependency>
     </dependencies>
-
 
 </project>
