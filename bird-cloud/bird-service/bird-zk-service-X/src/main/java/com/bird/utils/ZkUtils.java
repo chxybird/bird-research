@@ -38,6 +38,8 @@ public class ZkUtils {
                     log.info("zookeeper连接初始化成功");
                     //计数器减一,继续执行主线程
                     countDownLatch.countDown();
+                }else {
+
                 }
             });
             //阻塞当前线程(主线程)
@@ -62,6 +64,24 @@ public class ZkUtils {
             log.info("zookeeper连接关闭失败");
             e.printStackTrace();
         }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/22 18:52
+     * @Description 打开连接
+     */
+    public static void start(){
+
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/22 18:54
+     * @Description 获取会话的ID
+     */
+    public static long getSessionId(){
+        return zooKeeper.getSessionId();
     }
 
     /**

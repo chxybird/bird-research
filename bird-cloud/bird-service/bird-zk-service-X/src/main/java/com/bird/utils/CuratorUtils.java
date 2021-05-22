@@ -3,16 +3,16 @@ package com.bird.utils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
-import org.apache.curator.framework.imps.CuratorFrameworkState;
-import org.apache.curator.framework.recipes.cache.CuratorCache;
-import org.apache.curator.framework.recipes.cache.CuratorCacheListener;
 import org.apache.curator.framework.recipes.cache.NodeCache;
+import org.apache.curator.framework.recipes.cache.PathChildrenCache;
+import org.apache.curator.framework.recipes.cache.TreeCache;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.data.Stat;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;
+
 
 /**
  * @Author lipu
@@ -39,40 +39,85 @@ public class CuratorUtils {
                 .connectString(IP)
                 .connectionTimeoutMs(CONNECTION_TIMEOUT)
                 .sessionTimeoutMs(SESSION_TIMEOUT)
+                //重试策略 直接忽略理解 就这样设置
                 .retryPolicy(new ExponentialBackoffRetry(1000, 3))
                 .build();
         //打开连接
         client.start();
     }
 
-    /**
-     * @Author lipu
-     * @Date 2021/5/21 15:53
-     * @Description 关闭连接
-     */
-    public static void close(){
-        client.close();
-    }
 
     /**
      * @Author lipu
      * @Date 2021/5/21 15:54
      * @Description 打开连接
      */
-    public static void open(){
-        client.start();
+    public static void restart(){
+        try{
+            client.close();
+            client = CuratorFrameworkFactory.builder()
+                    .connectString(IP)
+                    .connectionTimeoutMs(CONNECTION_TIMEOUT)
+                    .sessionTimeoutMs(SESSION_TIMEOUT)
+                    //重试策略 直接忽略理解 就这样设置
+                    .retryPolicy(new ExponentialBackoffRetry(1000, 3))
+                    .build();
+            //打开连接
+            client.start();
+        }catch (Exception e){
+            log.error("重新创建连接失败");
+        }
     }
 
     /**
      * @Author lipu
-     * @Date 2021/5/21 15:56
-     * @Description 添加监听器
+     * @Date 2021/5/22 22:19
+     * @Description 获取链接对象
      */
-    public static void addWatch(String path,CuratorCacheListener listener){
-        //NodeCache(只监听当前节点) PathChildrenCache(监听当前节点的子节点) TreeCache(监听当前节点以及子节点)
-        CuratorCache curatorCache=CuratorCache.builder(client,path).build();
-        curatorCache.listenable().addListener(listener);
-        curatorCache.start();
+    public static CuratorFramework getClient(){
+        return client;
+    }
+
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/21 15:56
+     * @Description 监听节点
+     */
+    public static void watchNode(NodeCache nodeCache){
+        try {
+            //ZkNodeCache(只监听当前节点) PathChildrenCache(监听当前节点的子节点) TreeCache(监听当前节点以及子节点)
+            nodeCache.start();
+        } catch (Exception e) {
+            log.error("zookeeper监听节点失败");
+        }
+
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/22 21:41
+     * @Description 监听子节点
+     */
+    public static void watchChild(PathChildrenCache pathChildrenCache){
+        try {
+            pathChildrenCache.start();
+        } catch (Exception e) {
+            log.error("zookeeper监听节点失败");
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/22 21:42
+     * @Description 监听节点以及子节点
+     */
+    public static void watchChild(TreeCache treeCache){
+        try {
+            treeCache.start();
+        } catch (Exception e) {
+            log.error("zookeeper监听节点失败");
+        }
     }
 
     /**
@@ -99,15 +144,6 @@ public class CuratorUtils {
         }
     }
 
-
-    /**
-     * @Author lipu
-     * @Date 2021/5/21 15:34
-     * @Description 获取当前会话ID
-     */
-    public void getSessionId(){
-
-    }
 
 
     /**
@@ -282,8 +318,6 @@ public class CuratorUtils {
             log.error("节点更新失败");
         }
     }
-
-
 
 
 }

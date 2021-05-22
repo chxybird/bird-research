@@ -1,13 +1,9 @@
 package com.bird;
 
+import com.bird.listerner.ZkChildrenCache;
 import com.bird.utils.CuratorUtils;
-import org.apache.curator.framework.recipes.cache.CuratorCacheListener;
-import org.apache.curator.framework.recipes.cache.CuratorCacheListenerBuilder;
-import org.apache.curator.framework.recipes.cache.NodeCacheListener;
-import org.apache.zookeeper.CreateMode;
-import org.apache.zookeeper.data.Stat;
+import org.apache.curator.framework.recipes.cache.*;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -26,18 +22,32 @@ public class Client {
 //        CuratorUtils.exists("/node1/x");
 //        System.out.println(CuratorUtils.getStat("/node1"));
 //        Stat stat = CuratorUtils.getStat("/node1");
-        String data = CuratorUtils.getData("/node1");
-        System.out.println(data);
+//        String data = CuratorUtils.getData("/node1");
+//        System.out.println(data);
 //        CuratorUtils.delete("/node1");
 //        CuratorUtils.deleteWithChild("/node1");
 
 
+//        CuratorUtils.watchNode("/node1", new NodeCacheListener() {
+//            @Override
+//            public void nodeChanged() throws Exception {
+//                System.out.println("节点发生了变化");
+//            }
+//        });
 
 
+        String data = CuratorUtils.getData("/node1");
+        System.out.println(data);
+        CuratorUtils.restart();
+        String data2 = CuratorUtils.getData("/node1");
+        System.out.println(data2);
 
-//        CuratorCacheListener listener = CuratorCacheListener.builder()
-//                .forNodeCache(() -> System.out.println("节点发生了变化")).build();
-//        CuratorUtils.addWatch("/node1", listener);
+
+//        PathChildrenCache pathChildrenCache=
+//                new PathChildrenCache(CuratorUtils.getClient(),"/node1",true);
+//        pathChildrenCache.getListenable().addListener(new ZkChildrenCache());
+//        pathChildrenCache.start();
+//        CuratorUtils.watchChild(pathChildrenCache);
 //        TimeUnit.MINUTES.sleep(2);
 
     }
