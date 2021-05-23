@@ -6,6 +6,8 @@ import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.cache.NodeCache;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache;
 import org.apache.curator.framework.recipes.cache.TreeCache;
+import org.apache.curator.framework.recipes.locks.InterProcessLock;
+import org.apache.curator.framework.recipes.locks.InterProcessMutex;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.data.Stat;
@@ -91,7 +93,6 @@ public class CuratorUtils {
         } catch (Exception e) {
             log.error("zookeeper监听节点失败");
         }
-
     }
 
     /**
@@ -319,5 +320,36 @@ public class CuratorUtils {
         }
     }
 
+    /**
+     * @Author lipu
+     * @Date 2021/5/23 16:14
+     * @Description 加锁(排他锁)
+     */
+    public static InterProcessMutex lock(String path){
+        //获取锁
+        try {
+            //创建分布式排他锁 参数一 连接对象 参数二 节点路径
+            InterProcessMutex lock=new InterProcessMutex(client,path);
+            //获取锁
+            lock.acquire();
+            return lock;
+        } catch (Exception e) {
+            log.error("获取锁失败");
+            return null;
+        }
+    }
+
+    /**
+     * @Author lipu
+     * @Date 2021/5/23 16:19
+     * @Description 释放锁
+     */
+    public static void unLock(InterProcessLock lock){
+        try {
+            lock.release();
+        } catch (Exception e) {
+            log.error("锁释放失败");
+        }
+    }
 
 }
