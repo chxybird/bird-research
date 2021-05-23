@@ -9,16 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bird-zk-service-A</artifactId>
-
-    <dependencies>
-        <!--使用zookeeper作为注册中心-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-        </dependency>
-    </dependencies>
-
+    <artifactId>bird-zk-service-B</artifactId>
 
 
 </project>

@@ -1,0 +1,8 @@
+server:
+  port: 30001
+spring:
+  application:
+    name: zk-service-A
+  cloud:
+    zookeeper:
+      connect-string: 192.168.6.128:2181
