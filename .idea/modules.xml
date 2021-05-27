@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/bird-rabbitmq/bird-rabbitmq.iml" filepath="$PROJECT_DIR$/bird-rabbitmq/bird-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bird-research.iml" filepath="$PROJECT_DIR$/.idea/bird-research.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" filepath="$PROJECT_DIR$/bird-cloud/bird-service/bird-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-springboot/bird-springboot.iml" filepath="$PROJECT_DIR$/bird-springboot/bird-springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-task/bird-task.iml" filepath="$PROJECT_DIR$/bird-task/bird-task.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-utils/bird-utils.iml" filepath="$PROJECT_DIR$/bird-utils/bird-utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-webflux/bird-webflux.iml" filepath="$PROJECT_DIR$/bird-webflux/bird-webflux.iml" />

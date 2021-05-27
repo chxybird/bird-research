@@ -22,6 +22,7 @@
         <module>bird-rabbitmq</module>
         <module>bird-elastic</module>
         <module>bird-webflux</module>
+        <module>bird-springboot</module>
     </modules>
 
     <packaging>pom</packaging>

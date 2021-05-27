@@ -1,0 +1,13 @@
+bird:
+  ip: 192.168.192.128
+  port: 20
+  name: '小鸟程序员'
+
+spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    lettuce:
+      pool:
+        max-active: 20
+        max-idle: 20
