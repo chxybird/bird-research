@@ -8,11 +8,13 @@ package com.bird.tree;
 public class Client {
     public static void main(String[] args) {
         BirdBinaryTree tree=new BirdBinaryTree();
+        tree.add(20);
         tree.add(10);
-        tree.add(5);
+        tree.add(30);
         tree.add(15);
-        tree.add(1);
-        tree.preOrder();
+        System.out.println("添加完毕");
+        tree.delete(20);
+        tree.in();
     }
 
 }

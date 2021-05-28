@@ -27,17 +27,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
-      <change afterPath="$PROJECT_DIR$/bird-mongodb/src/main/java/com/bird/dao/ActivityMongoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-mongodb/src/main/java/com/bird/dao/CouponMongoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-mongodb/src/main/java/com/bird/entity/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-mongodb/src/main/java/com/bird/entity/Coupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-mongodb/src/main/java/com/bird/entity/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-mongodb/src/main/java/com/bird/vo/CalculateVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-mongodb/src/test/java/MongoTemplateTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-mongodb/src/test/java/MongoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-mongodb/src/test/java/MongoDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-springboot/src/main/java/com/bird/aop/IdempotenceAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-springboot/src/main/java/com/bird/aop/IdempotenceAop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/utils/RestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/utils/RestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/BirdBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/BirdBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +110,33 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MongoTemplateTest.test7">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="BirdBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.tree.BirdBinaryTree" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.tree.Client" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MongoDaoTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bird-mongodb" />
       <option name="PACKAGE_NAME" value="" />
@@ -139,26 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoTemplateTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bird-mongodb" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MongoTemplateTest" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MongoTemplateTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bird-mongodb" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MongoTemplateTest" />
-      <option name="METHOD_NAME" value="test6" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MongoTemplateTest.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bird-mongodb" />
       <option name="PACKAGE_NAME" value="" />
@@ -171,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.BirdBinaryTree" />
         <item itemvalue="JUnit.MongoTemplateTest.test7" />
         <item itemvalue="JUnit.MongoDaoTest.test8" />
         <item itemvalue="JUnit.MongoDaoTest.test7" />
-        <item itemvalue="JUnit.MongoTemplateTest.test4" />
-        <item itemvalue="JUnit.MongoTemplateTest.test6" />
       </list>
     </recent_temporary>
   </component>
@@ -290,14 +288,7 @@
       <workItem from="1621990630805" duration="17711000" />
       <workItem from="1622081336187" duration="11025000" />
       <workItem from="1622101536260" duration="7470000" />
-      <workItem from="1622163123857" duration="14542000" />
-    </task>
-    <task id="LOCAL-00017" summary="调研提交">
-      <created>1617689870795</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1617689870795</updated>
+      <workItem from="1622163123857" duration="27417000" />
     </task>
     <task id="LOCAL-00018" summary="调研提交">
       <created>1617692231660</created>
@@ -635,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622096062426</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="调研提交">
+      <created>1622184639113</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1622184639114</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -725,38 +723,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622086525263" />
-    <state width="1492" height="453" key="GridCell.Tab.0.bottom" timestamp="1622183679106">
+    <state width="1492" height="453" key="GridCell.Tab.0.bottom" timestamp="1622197467501">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="453" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622183679106" />
-    <state width="1492" height="453" key="GridCell.Tab.0.center" timestamp="1622183679106">
+    <state width="1492" height="453" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622197467501" />
+    <state width="1492" height="453" key="GridCell.Tab.0.center" timestamp="1622197467500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="453" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622183679106" />
-    <state width="1492" height="453" key="GridCell.Tab.0.left" timestamp="1622183679106">
+    <state width="1492" height="453" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622197467500" />
+    <state width="1492" height="453" key="GridCell.Tab.0.left" timestamp="1622197467500">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="453" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622183679106" />
-    <state width="1492" height="453" key="GridCell.Tab.0.right" timestamp="1622183679106">
+    <state width="1492" height="453" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622197467500" />
+    <state width="1492" height="453" key="GridCell.Tab.0.right" timestamp="1622197467501">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="453" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622183679106" />
-    <state width="1492" height="478" key="GridCell.Tab.1.bottom" timestamp="1622100762237">
+    <state width="1492" height="453" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622197467501" />
+    <state width="1492" height="310" key="GridCell.Tab.1.bottom" timestamp="1622192337477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="478" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622100762237" />
-    <state width="1492" height="478" key="GridCell.Tab.1.center" timestamp="1622100762237">
+    <state width="1492" height="310" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622192337477" />
+    <state width="1492" height="310" key="GridCell.Tab.1.center" timestamp="1622192337477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="478" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622100762237" />
-    <state width="1492" height="478" key="GridCell.Tab.1.left" timestamp="1622100762237">
+    <state width="1492" height="310" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622192337477" />
+    <state width="1492" height="310" key="GridCell.Tab.1.left" timestamp="1622192337477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="478" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622100762237" />
-    <state width="1492" height="478" key="GridCell.Tab.1.right" timestamp="1622100762237">
+    <state width="1492" height="310" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622192337477" />
+    <state width="1492" height="310" key="GridCell.Tab.1.right" timestamp="1622192337477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="478" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622100762237" />
+    <state width="1492" height="310" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622192337477" />
     <state width="1492" height="478" key="GridCell.Tab.2.bottom" timestamp="1622100762237">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -793,10 +791,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1621933036514" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622096069398">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622184647125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622096069398" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622184647125" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1619745784937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
