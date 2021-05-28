@@ -41,7 +41,7 @@ public class RestUtils {
     private static String paramInstall(String url, Map<String, Object> param) {
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url);
         //参数拼接
-        if (param!=null){
+        if (param != null) {
             for (Map.Entry<String, Object> entry : param.entrySet()) {
                 builder.queryParam(entry.getKey(), entry.getValue());
             }
@@ -56,7 +56,7 @@ public class RestUtils {
      */
     private static String pathInstall(String url, Map<String, Object> pathParam) {
         StringBuilder pathUrl = new StringBuilder(url);
-        if (pathParam!=null){
+        if (pathParam != null) {
             for (Map.Entry<String, Object> entry : pathParam.entrySet()) {
                 pathUrl.append("/{").append(entry.getKey()).append("}");
             }
@@ -94,10 +94,10 @@ public class RestUtils {
      * @Date 2021/4/19 10:48
      * @Description GET 请求体JSON 转JSON
      */
-    public static String getByBody(String url,Object body){
+    public static String getByBody(String url, Object body) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity<Object> entity=new HttpEntity<>(body,headers);
+        HttpEntity<Object> entity = new HttpEntity<>(body, headers);
         ResponseEntity<String> responseEntity = restTemplate
                 .exchange(url, HttpMethod.GET, entity, String.class);
         return responseEntity.getBody();
@@ -108,10 +108,10 @@ public class RestUtils {
      * @Date 2021/4/19 15:17
      * @Description POST 请求体 转JSON
      */
-    public static String postByBody(String url,Object body){
+    public static String postByBody(String url, Object body) {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity<Object> entity=new HttpEntity<>(body,headers);
+        HttpEntity<Object> entity = new HttpEntity<>(body, headers);
         ResponseEntity<String> responseEntity = restTemplate
                 .exchange(url, HttpMethod.POST, entity, String.class);
         return responseEntity.getBody();
@@ -122,9 +122,13 @@ public class RestUtils {
      * @Date 2021/4/19 14:39
      * @Description 通用请求 返回json
      */
-    public static String rest(String url,HttpMethod method,Map<String,Object> param,
-                              Map<String,Object> pathVariable,Object body,HttpHeaders headers){
-        if (url==null){
+    public static String rest(
+            String url,
+            HttpMethod method,
+            Map<String, Object> param,
+            Map<String, Object> pathVariable,
+            Object body, HttpHeaders headers) {
+        if (url == null) {
             return null;
         }
         //path参数封装
@@ -132,12 +136,12 @@ public class RestUtils {
         //param参数组装
         String finalUrl = param == null ? pathUrl : paramInstall(pathUrl, param);
         //header参数封装
-        if (headers==null){
-            headers=new HttpHeaders();
+        if (headers == null) {
+            headers = new HttpHeaders();
         }
         //body参数封装
         headers.setContentType(MediaType.APPLICATION_JSON);
-        HttpEntity<Object> entity=new HttpEntity<>(body,headers);
+        HttpEntity<Object> entity = new HttpEntity<>(body, headers);
         ResponseEntity<String> responseEntity = restTemplate.exchange(finalUrl, method, entity, String.class);
         return responseEntity.getBody();
     }
@@ -146,7 +150,7 @@ public class RestUtils {
         @Override
         protected HttpUriRequest createHttpUriRequest(HttpMethod httpMethod, URI uri) {
 
-            if (httpMethod==HttpMethod.GET){
+            if (httpMethod == HttpMethod.GET) {
                 return new RestClientFactory.HttpGetRequestWithEntity(uri);
             }
             return super.createHttpUriRequest(httpMethod, uri);
@@ -162,6 +166,7 @@ public class RestUtils {
             public HttpGetRequestWithEntity(final URI uri) {
                 super.setURI(uri);
             }
+
             @Override
             public String getMethod() {
                 return HttpMethod.GET.name();

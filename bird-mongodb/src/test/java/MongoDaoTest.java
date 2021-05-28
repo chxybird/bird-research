@@ -1,18 +1,24 @@
 import com.bird.MongoDB;
+import com.bird.dao.ActivityMongoDao;
+import com.bird.dao.CouponMongoDao;
 import com.bird.dao.StudentMongoDao;
+import com.bird.entity.Activity;
+import com.bird.entity.Coupon;
+import com.bird.entity.Organization;
 import com.bird.entity.Student;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
+
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -22,11 +28,13 @@ import java.util.Optional;
  * @Description
  */
 @SpringBootTest(classes = MongoDB.class)
-public class MongoTest {
-    @Resource
-    private MongoTemplate mongoTemplate;
+public class MongoDaoTest {
     @Resource
     private StudentMongoDao studentMongoDao;
+    @Resource
+    private ActivityMongoDao activityMongoDao;
+    @Resource
+    private CouponMongoDao couponMongoDao;
 
 
 
@@ -161,12 +169,35 @@ public class MongoTest {
 
     /**
      * @Author lipu
-     * @Date 2021/5/26 16:46
-     * @Description 条件查询
+     * @Date 2021/5/27 18:11
+     * @Description 嵌套文档
      */
     @Test
-    public void test7(){
-
+    void test7(){
+        //构造数据
+        Activity activity=new Activity();
+        activity.setId(1L);
+        activity.setName("活动一");
+        activity.setStartDate(new Date());
+        activity.setEndDate(new Date());
+        Organization organization=new Organization();
+        organization.setName("华为有限公司");
+        organization.setDescription("华为公司是一家优秀的公司");
+        activity.setOrganization(organization);
+        List<Coupon> couponList=new ArrayList<>();
+        Coupon couponOne=new Coupon();
+        Coupon couponTwo=new Coupon();
+        couponOne.setId(1L);
+        couponOne.setCouponName("优惠券一");
+        couponTwo.setId(2L);
+        couponTwo.setCouponName("优惠券二");
+        couponList.add(couponOne);
+        couponList.add(couponTwo);
+        activity.setCouponList(couponList);
+        //插入coupon文档 即使设置了关联关系也需要先插入
+        couponMongoDao.insert(couponList);
+        //插入文档
+        activityMongoDao.insert(activity);
     }
 
 

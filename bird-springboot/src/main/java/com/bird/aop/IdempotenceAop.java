@@ -45,8 +45,9 @@ public class IdempotenceAop {
         Method method = signature.getMethod();
         Idempotence idempotence = method.getAnnotation(Idempotence.class);
         if (idempotence.isActive()) {
-            //执行幂等性校验逻辑
+            //执行幂等性校验逻辑 redisTemplate.hasKey(KEY)判断key是否存在也可以
             String value =(String) redisTemplate.opsForValue().get(KEY);
+
             //第一次提交
             if (value==null){
                 //这里的KEY应该存每个用户的唯一标识,这里作为demo,就固定一下,思路不变
