@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/bird-elastic/bird-elastic.iml" filepath="$PROJECT_DIR$/bird-elastic/bird-elastic.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-excel/bird-excel.iml" filepath="$PROJECT_DIR$/bird-excel/bird-excel.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" filepath="$PROJECT_DIR$/bird-freemarker/bird-freemarker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-hadoop/bird-hadoop.iml" filepath="$PROJECT_DIR$/bird-hadoop/bird-hadoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-jdk/bird-jdk.iml" filepath="$PROJECT_DIR$/bird-jdk/bird-jdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-json/bird-json.iml" filepath="$PROJECT_DIR$/bird-json/bird-json.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-layui/bird-layui.iml" filepath="$PROJECT_DIR$/bird-layui/bird-layui.iml" />

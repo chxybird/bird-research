@@ -23,6 +23,7 @@
         <module>bird-elastic</module>
         <module>bird-webflux</module>
         <module>bird-springboot</module>
+        <module>bird-hadoop</module>
     </modules>
 
     <packaging>pom</packaging>

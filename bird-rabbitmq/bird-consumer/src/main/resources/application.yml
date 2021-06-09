@@ -8,11 +8,14 @@ spring:
     password: bird #密码
     virtual-host: bird  #虚拟主机名称、
 
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql:///bird_research?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
     username: root
     password: root
+
+
 
 #日志配置
 logging:
