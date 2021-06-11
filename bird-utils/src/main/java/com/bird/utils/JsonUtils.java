@@ -33,7 +33,6 @@ public class JsonUtils {
     private static final String JSON_SUFFIX = ".json";
 
     static {
-
         //json序列化时候如果字段为空则不序列化该字段
         objectMapper.setDefaultPropertyInclusion(JsonInclude.Include.NON_EMPTY);
         //JSON反序列化为对象的时候如果对象没有对应字段就忽略该字段
@@ -119,13 +118,8 @@ public class JsonUtils {
         }
     }
 
+
     /**
-     * @Author lipu
-     * @Date 2021/4/15 11:28
-     * @Description JSON转MAP
-     */
-    /**
-     * @return
      * @Author lipu
      * @Date 2021/4/15 11:28
      * @Description JSON转MAP

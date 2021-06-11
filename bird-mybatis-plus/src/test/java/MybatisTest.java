@@ -25,7 +25,6 @@ public class MybatisTest {
     public void test(){
 //        Student student = studentDao.selectById(1L);
 //        System.out.println(student);
-
         Student student = studentDao.findById(1L);
         System.out.println(student);
 
