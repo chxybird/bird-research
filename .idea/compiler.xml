@@ -15,20 +15,21 @@
         <module name="bird-cryptology" />
         <module name="bird-zk-service-B" />
         <module name="bird-authority" />
+        <module name="bird-log" />
         <module name="bird-mongodb" />
         <module name="bird-json" />
         <module name="bird-freemarker" />
         <module name="bird-springboot" />
         <module name="bird-mybatis-plus" />
         <module name="bird-provider" />
+        <module name="bird-consumer" />
         <module name="bird-excel" />
         <module name="bird-hadoop" />
         <module name="bird-leet-code" />
         <module name="bird-zk-service-X" />
-        <module name="service-common" />
         <module name="bird-layui" />
         <module name="bird-utils" />
-        <module name="bird-consumer" />
+        <module name="service-common" />
         <module name="bird-webflux" />
       </profile>
     </annotationProcessing>
@@ -45,6 +46,7 @@
       <module name="bird-json" target="1.8" />
       <module name="bird-layui" target="1.8" />
       <module name="bird-leet-code" target="1.8" />
+      <module name="bird-log" target="1.8" />
       <module name="bird-mongodb" target="1.8" />
       <module name="bird-mybatis-plus" target="1.8" />
       <module name="bird-provider" target="1.8" />
@@ -77,6 +79,7 @@
       <module name="bird-json" options="-parameters" />
       <module name="bird-layui" options="-parameters" />
       <module name="bird-leet-code" options="-parameters" />
+      <module name="bird-log" options="-parameters" />
       <module name="bird-mongodb" options="-parameters" />
       <module name="bird-mybatis-plus" options="-parameters" />
       <module name="bird-provider" options="-parameters" />

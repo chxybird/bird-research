@@ -1,6 +1,9 @@
 package com.bird.tree;
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Author lipu
  * @Date 2021/5/7 15:44
@@ -10,7 +13,7 @@ public class BirdBinaryTree {
     /**
      * 树根节点
      */
-    private final Node ROOT = new Node();
+    private Node ROOT = new Node();
 
     static class Node {
         //元数据
@@ -110,13 +113,14 @@ public class BirdBinaryTree {
      * @Description 中序遍历 左 根 右
      */
     public void in() {
+        List<Node> nodeList=new ArrayList<>();
         if (ROOT.data == null) {
             System.out.println("[]");
         }
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("[");
         //根节点开始递归遍历
-        inOrder(ROOT, stringBuilder);
+        inOrder(ROOT, stringBuilder,nodeList);
         stringBuilder.append("]");
         stringBuilder.deleteCharAt(stringBuilder.length() - 2);
         System.out.println(stringBuilder.toString());
@@ -143,6 +147,22 @@ public class BirdBinaryTree {
 
     /**
      * @Author lipu
+     * @Date 2021/6/11 17:02
+     * @Description 用于删除节点第三种情况获取右子树中序遍历的第一个节点
+     */
+    private Node inFirst(Node node){
+        List<Node> nodeList=new ArrayList<>();
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("[");
+        inOrder(node, stringBuilder,nodeList);
+        stringBuilder.append("]");
+        stringBuilder.deleteCharAt(stringBuilder.length() - 2);
+        return nodeList.get(0);
+    }
+
+
+    /**
+     * @Author lipu
      * @Date 2021/5/28 15:56
      * @Description
      */
@@ -163,15 +183,17 @@ public class BirdBinaryTree {
      * @Date 2021/5/28 16:25
      * @Description
      */
-    private void inOrder(Node node, StringBuilder stringBuilder) {
+    private void inOrder(Node node, StringBuilder stringBuilder,List<Node> nodeList) {
         //从根节点开始遍历
         if (node != null) {
             //递归遍历左子树
-            inOrder(node.left, stringBuilder);
+            inOrder(node.left, stringBuilder,nodeList);
             //访问节点
             stringBuilder.append(node.data).append(",");
+            //加入集合
+            nodeList.add(node);
             //递归遍历右子树
-            inOrder(node.right, stringBuilder);
+            inOrder(node.right, stringBuilder,nodeList);
         }
     }
 
@@ -199,7 +221,7 @@ public class BirdBinaryTree {
      * 二叉排序树的删除有三种情况
      * 第一种 叶子结点直接删除
      * 第二种 仅有一个孩子节点 上移子树
-     * 第三种 两个孩子节点都在 用删除节点的直接后继来替换当前节点，调整位置
+     * 第三种 两个孩子节点都在 选择删除节点的右子树中序遍历的第一个元素进行替换
      */
     public void delete(Integer data) {
         Node node = search(ROOT, data);
@@ -209,52 +231,36 @@ public class BirdBinaryTree {
         }
         //第一种情况 叶子结点 直接删除
         if (node.left == null && node.right == null) {
-            //父节点为根节点 TODO
-            //找到当前节点的父节点 判断此节点是左节点还是右节点 让父节点的该指针域指向空
-            Node father = node.father;
-            if (father.left == null) {
-                //右节点
-                father.right = null;
-            } else if (father.right == null) {
-                //左节点
-                father.left = null;
+            //当前节点为根节点 不要置null 修改其data即可
+            if (node.data.equals(ROOT.data)) {
+                node.data = null;
+                return;
             } else {
-                //判断左右节点
-                if (node.data.equals(father.left.data)) {
-                    //左节点
-                    father.left = null;
-                } else {
-                    //右节点
-                    father.right = null;
+                Node father = node.father;
+                if (father.left==node){
+                    father.left=null;
+                }else {
+                    father.right=null;
                 }
             }
-
         }
-        //第二种情况 仅有一个孩子节点 上移子树(等价于让当前节点的父节点指向当前节点的子节点)
-        if ((node.left == null && node.right != null) || (node.left != null && node.right == null)) {
-            //父节点为根节点 TODO
-            Node father = node.father;
-            Node child;
-            if (node.left == null) {
-                child = node.right;
+        //第二种情况 仅有一个孩子节点 上移子树
+        if (node.left == null || node.right == null) {
+            if (node.left != null) {
+                node = node.left;
             } else {
-                child = node.left;
+                node = node.right;
             }
-            //判断当前节点是父节点的左孩子还是右孩子
-            if (father.left.data.equals(node.data)) {
-                father.left = child;
-            } else {
-                father.right = child;
-            }
+            return;
         }
 
-        //第三种情况 两个孩子节点都在 用删除节点的父节点指向删除节点的后继节点(左右都可以)
-        if (node.left != null && node.right != null) {
-            //父节点为根节点 TODO
-            //个人习惯使用左直接后继替换
-            Node father = node.father;
-            father.left = node.left;
-        }
+        //第三种情况 两个孩子节点都在(操作三步走)
+        //寻找当前删除节点右子树中序遍历的第一个节点N
+        Node search= inFirst(node.right);
+        //删除该节点N
+        delete(search.data);
+        //该N节点替换被删除的节点
+        search=node;
     }
 
 }

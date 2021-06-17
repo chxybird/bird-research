@@ -27,123 +27,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="03653840-f94b-4cb8-9e89-2797550a885d" name="Default Changelist" comment="调研提交">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_json_provider_2_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_jcip_jcip_annotations_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_extensions_guice_servlet_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_inject_guice_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_re2j_re2j_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_55.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nimbusds_nimbus_jose_jwt_8_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp_okhttp_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_guice_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_daemon_commons_daemon_1_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dnsjava_dnsjava_2_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_63_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_63_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_configuration2_2_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_client_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_thirdparty_hadoop_shaded_protobuf_3_7_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_htrace_htrace_core4_4_1_0_incubating.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_admin_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_client_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_common_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_core_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_crypto_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_identity_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_server_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_simplekdc_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerb_util_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_asn1_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_config_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_pkix_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_util_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_kerby_xdr_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kerby_token_provider_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_jute_3_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_ajax_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_39_v20210325.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jline_jline_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-hadoop/bird-hadoop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-hadoop/src/main/java/com/bird/controller/HadoopController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-hadoop/src/test/java/HdfsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-springboot/src/main/java/com/bird/anotation/Permit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-springboot/src/main/java/com/bird/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-springboot/src/main/java/com/bird/controller/BirdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bird-springboot/src/main/java/com/bird/interceptor/BirdInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/chain/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/chain/CommonHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/chain/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/chain/Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/chain/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/chain/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/flyweight/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/flyweight/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/flyweight/Flyweight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/flyweight/FlyweightFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/flyweight/InnerStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/flyweight/OuterStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/template/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/template/FootBall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/design/template/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/sort/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/sort/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/sort/InsertSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/sort/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-log/bird-log.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-log/src/main/java/com/bird/LogApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-log/src/main/java/com/bird/controller/LogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-log/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bird-log/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-hadoop/src/main/java/com/bird/utils/HdfsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-hadoop/src/main/java/com/bird/utils/HdfsUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-mybatis-plus/src/test/java/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-mybatis-plus/src/test/java/MybatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-utils/src/main/java/com/bird/utils/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/BirdBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/BirdBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/bird-leet-code/src/main/java/com/bird/tree/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,15 +122,6 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\images" />
-      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\static" />
-      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.bird.entity" />
-      <recent name="com.bird.utils" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\excel" />
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\images" />
@@ -223,74 +129,89 @@
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-freemarker\src\main\resources" />
       <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\js" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bird.entity" />
+      <recent name="com.bird.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\images" />
+      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-excel\src\main\resources\static" />
+      <recent name="F:\workspace\DistributedMicroservices\bird-research\bird-jdk\src\main\resources\document" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootApp">
-    <configuration name="HdfsTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bird-hadoop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HdfsTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
+  <component name="RunManager" selected="Application.Client (4)">
+    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.sort.Client" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HdfsTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bird-hadoop" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HdfsTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.design.flyweight.Client" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.design.flyweight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HadoopApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="bird-hadoop" />
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.design.template.Client" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.design.template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bird.design.chain.Client" />
+      <module name="bird-leet-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bird.design.chain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="bird-log" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.bird.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.HadoopApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProviderApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="bird-provider" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.ProviderApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringBootApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="bird-springboot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bird.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.SpringBootApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bird.LogApp" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringBootApp" />
-        <item itemvalue="Spring Boot.HadoopApp" />
-        <item itemvalue="JUnit.HdfsTest.test2" />
-        <item itemvalue="JUnit.HdfsTest.test1" />
-        <item itemvalue="Spring Boot.ProviderApp" />
+        <item itemvalue="Application.Client (4)" />
+        <item itemvalue="Application.Client (3)" />
+        <item itemvalue="Application.Client (2)" />
+        <item itemvalue="Spring Boot.LogApp" />
+        <item itemvalue="Application.Client (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -418,14 +339,10 @@
       <workItem from="1623287533053" duration="8971000" />
       <workItem from="1623306883615" duration="215000" />
       <workItem from="1623307114852" duration="11937000" />
-      <workItem from="1623376754164" duration="7724000" />
-    </task>
-    <task id="LOCAL-00020" summary="调研提交">
-      <created>1617692820685</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1617692820685</updated>
+      <workItem from="1623376754164" duration="16656000" />
+      <workItem from="1623720020643" duration="18949000" />
+      <workItem from="1623804437231" duration="14350000" />
+      <workItem from="1623891987070" duration="22030000" />
     </task>
     <task id="LOCAL-00021" summary="调研提交">
       <created>1617712295748</created>
@@ -763,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623228148344</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="调研提交">
+      <created>1623395585957</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1623395585958</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -813,18 +737,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="651" y="274" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1618457256991" />
-    <state x="249" y="0" key="#Project_Structure" timestamp="1615028748464">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1615028748464" />
     <state x="490" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1618493390915">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="490" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1618493390915" />
-    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1623394276942">
+    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1623923366315">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1623394276942" />
+    <state x="574" y="128" width="726" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1623923366315" />
     <state x="325" y="335" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1618824554940">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -849,58 +769,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1619667891250" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1622086525263">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1623722354531">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622086525263" />
-    <state width="1492" height="309" key="GridCell.Tab.0.bottom" timestamp="1623379581208">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1623722354531" />
+    <state width="1492" height="415" key="GridCell.Tab.0.bottom" timestamp="1623921723285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623379581208" />
-    <state width="1492" height="309" key="GridCell.Tab.0.center" timestamp="1623379581208">
+    <state width="1492" height="415" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623921723285" />
+    <state width="1492" height="415" key="GridCell.Tab.0.center" timestamp="1623921723285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623379581208" />
-    <state width="1492" height="309" key="GridCell.Tab.0.left" timestamp="1623379581208">
+    <state width="1492" height="415" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1623921723285" />
+    <state width="1492" height="415" key="GridCell.Tab.0.left" timestamp="1623921723285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623379581208" />
-    <state width="1492" height="309" key="GridCell.Tab.0.right" timestamp="1623379581208">
+    <state width="1492" height="415" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1623921723285" />
+    <state width="1492" height="415" key="GridCell.Tab.0.right" timestamp="1623921723285">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623379581208" />
-    <state width="1492" height="309" key="GridCell.Tab.1.bottom" timestamp="1623379581209">
+    <state width="1492" height="415" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1623921723285" />
+    <state width="1492" height="237" key="GridCell.Tab.1.bottom" timestamp="1623901452686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
-    <state width="1492" height="309" key="GridCell.Tab.1.center" timestamp="1623379581209">
+    <state width="1492" height="237" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623901452686" />
+    <state width="1492" height="237" key="GridCell.Tab.1.center" timestamp="1623901452686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
-    <state width="1492" height="309" key="GridCell.Tab.1.left" timestamp="1623379581209">
+    <state width="1492" height="237" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1623901452686" />
+    <state width="1492" height="237" key="GridCell.Tab.1.left" timestamp="1623901452686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
-    <state width="1492" height="309" key="GridCell.Tab.1.right" timestamp="1623379581209">
+    <state width="1492" height="237" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1623901452686" />
+    <state width="1492" height="237" key="GridCell.Tab.1.right" timestamp="1623901452686">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
-    <state width="1492" height="309" key="GridCell.Tab.2.bottom" timestamp="1623379581209">
+    <state width="1492" height="237" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1623901452686" />
+    <state width="1492" height="309" key="GridCell.Tab.2.bottom" timestamp="1623404412108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
-    <state width="1492" height="309" key="GridCell.Tab.2.center" timestamp="1623379581209">
+    <state width="1492" height="309" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1623404412108" />
+    <state width="1492" height="309" key="GridCell.Tab.2.center" timestamp="1623404412108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
-    <state width="1492" height="309" key="GridCell.Tab.2.left" timestamp="1623379581209">
+    <state width="1492" height="309" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1623404412108" />
+    <state width="1492" height="309" key="GridCell.Tab.2.left" timestamp="1623404412108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
-    <state width="1492" height="309" key="GridCell.Tab.2.right" timestamp="1623379581209">
+    <state width="1492" height="309" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1623404412108" />
+    <state width="1492" height="309" key="GridCell.Tab.2.right" timestamp="1623404412108">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="309" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1623379581209" />
+    <state width="1492" height="309" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1623404412108" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1621696236479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -921,10 +841,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="217" y="69" width="1224" height="711" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1621933036514" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1623228372493">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1623395728472">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1623228372493" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1623395728472" />
     <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1619745784937">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -941,10 +861,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="526" y="272" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1617378100722" />
-    <state x="309" y="91" key="new project wizard" timestamp="1623224257891">
+    <state x="309" y="91" key="new project wizard" timestamp="1623748240179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="309" y="91" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1623224257891" />
+    <state x="309" y="91" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1623748240179" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1621915090440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

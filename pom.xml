@@ -24,6 +24,7 @@
         <module>bird-webflux</module>
         <module>bird-springboot</module>
         <module>bird-hadoop</module>
+        <module>bird-log</module>
     </modules>
 
     <packaging>pom</packaging>

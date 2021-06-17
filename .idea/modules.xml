@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/bird-json/bird-json.iml" filepath="$PROJECT_DIR$/bird-json/bird-json.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-layui/bird-layui.iml" filepath="$PROJECT_DIR$/bird-layui/bird-layui.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" filepath="$PROJECT_DIR$/bird-leet-code/bird-leet-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bird-log/bird-log.iml" filepath="$PROJECT_DIR$/bird-log/bird-log.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" filepath="$PROJECT_DIR$/bird-mongodb/bird-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-mybatis-plus/bird-mybatis-plus.iml" filepath="$PROJECT_DIR$/bird-mybatis-plus/bird-mybatis-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/bird-rabbitmq/bird-provider/bird-provider.iml" filepath="$PROJECT_DIR$/bird-rabbitmq/bird-provider/bird-provider.iml" />

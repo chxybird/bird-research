@@ -12,8 +12,11 @@ public class Client {
         tree.add(10);
         tree.add(30);
         tree.add(15);
+        tree.add(7);
+        tree.add(8);
+        tree.add(6);
         System.out.println("添加完毕");
-        tree.delete(20);
+        tree.delete(10);
         tree.in();
     }
 
